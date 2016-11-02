@@ -5,7 +5,7 @@
 .btn {
   display          : inline-block;
   font-size        : 16px;
-  margin-bottom    : 0; // For input.btn
+  margin-bottom    : 0;
   font-weight      : normal;
   text-align       : center;
   vertical-align   : middle;
@@ -23,7 +23,12 @@
 }
 
 .btn--default {
-
+  background-color : #aaaaaa;
+  color            : $black;
+  &:hover {
+    background-color : #666666;
+    color            : $white;
+  }
 }
 
 .btn--brand {
@@ -39,9 +44,13 @@
 // --------------------------------------------------
 
 .btn--lg {
+  font-size        : 18px;
+  padding          : 15px 60px 13px;
 }
 
 .btn--sm {
+  padding          : 6px 30px 5px;
+  font-size        : 14px;
 }
 
 // Block button

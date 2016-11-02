@@ -1,58 +1,4 @@
-
-
-
-<!-- navbar -->
-<nav class="navbar navbar-inverse">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Navigation</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
-
-
-<div>
-    <div class="container">
-        <h1>
-            Base Styles
-        </h1>
-        <p>
-            The purpose of this page is to view all the base styles of a project.
-        </p>
-    </div>
-</div>
-
-
-
-
-
 <div class="container" role="main">
-
 
     <div class="page-header">
         <h1>Headings</h1>
@@ -65,45 +11,27 @@
             <h3>Heading 3</h3>
             <h4>Heading 4</h4>
             <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
         </div>
         <div class="col-sm-6">
             <h1 class="text-brand">Brand Color</h1>
-            <h2 class="text-brand-light">Brand Light</h2>
-            <h3 class="text-secondary">Secondary</h3>
         </div>
     </div>
-
 
     <div class="page-header">
         <h1>Buttons</h1>
     </div>
     <p>
-        <button type="button" class="btn btn-lg btn-default">Default</button>
-        <button type="button" class="btn btn-lg btn-brand">Brand</button>
-        <button type="button" class="btn btn-lg btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-lg btn-dark">Dark</button>
-        <button type="button" class="btn btn-lg btn-inverse">Inverse</button>
-        <button type="button" class="btn btn-lg btn-outline">Outline</button>
+        <button type="button" class="btn btn--lg btn--default">Default</button>
+        <button type="button" class="btn btn--lg btn--brand">Brand</button>
     </p>
     <p>
-        <button type="button" class="btn btn-default">Default</button>
-        <button type="button" class="btn btn-brand">Brand</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-dark">Dark</button>
-        <button type="button" class="btn btn-inverse">Inverse</button>
-        <button type="button" class="btn btn-outline">Outline</button>
+        <button type="button" class="btn btn--default">Default</button>
+        <button type="button" class="btn btn--brand">Brand</button>
     </p>
     <p>
-        <button type="button" class="btn btn-sm btn-default">Default</button>
-        <button type="button" class="btn btn-sm btn-brand">Brand</button>
-        <button type="button" class="btn btn-sm btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-sm btn-dark">Dark</button>
-        <button type="button" class="btn btn-sm btn-inverse">Inverse</button>
-        <button type="button" class="btn btn-sm btn-outline">Outline</button>
+        <button type="button" class="btn btn--sm btn--default">Default</button>
+        <button type="button" class="btn btn--sm btn--brand">Brand</button>
     </p>
-
-
 
     <div class="page-header">
         <h1>Forms</h1>
@@ -141,7 +69,7 @@
 
     <div class="row">
         <div class="col-sm-6">
-            <p>
+            <p class="p--lg">
                 Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a>
                 adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec
                 faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero

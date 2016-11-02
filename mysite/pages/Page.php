@@ -15,7 +15,7 @@ class Page_Controller extends ContentController {
 
     public function init() {
         parent::init();
-        Requirements::css("{$this->ThemeDir()}/css/main.min.css");
+        Requirements::css("{$this->ThemeDir()}/css/main.css");
 
 
         // Combine and include js
