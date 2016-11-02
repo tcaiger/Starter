@@ -1,0 +1,44 @@
+/*------------------------------------*\
+    #GENERIC.FONTS
+\*------------------------------------*/
+
+// Langdon
+@font-face {
+  font-family : Langdon;
+  src         : url('../fonts/langdon.woff') format('woff'),
+  url('../fonts/langdon.woff2') format('woff2');
+  font-weight : 800;
+}
+
+// Stag Bold
+@font-face {
+  font-family : Stag;
+  src         : url('../fonts/stag-bold.otf') format('otf');
+  font-weight : 800;
+}
+
+// Stag Book
+@font-face {
+  font-family : Stag;
+  src         : url('../fonts/stag-book.ttf') format('ttf');
+  font-weight : 400;
+}
+
+
+// Roboto
+@font-face {
+  font-family : Roboto;
+  src         : url('../fonts/roboto-regular.woff') format('woff'),
+  url('../fonts/roboto-regular.woff2') format('woff2');
+  font-weight : 400;
+}
+
+
+// Roboto Condensed
+@font-face {
+  font-family : Roboto-Condensed;
+  src         : url('../fonts/robotocondensed-regular.woff') format('woff'),
+  url('../fonts/robotocondensed-regular.woff2') format('woff2');
+  font-weight : 400;
+}
+

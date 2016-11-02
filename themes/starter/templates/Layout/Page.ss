@@ -13,7 +13,7 @@
             <h5>Heading 5</h5>
         </div>
         <div class="col-sm-6">
-            <h1 class="text-brand">Brand Color</h1>
+            <h1 class="text-blue">Brand Color</h1>
         </div>
     </div>
 
@@ -21,16 +21,19 @@
         <h1>Buttons</h1>
     </div>
     <p>
-        <button type="button" class="btn btn--lg btn--default">Default</button>
-        <button type="button" class="btn btn--lg btn--brand">Brand</button>
+        <button type="button" class="btn btn--lg btn--default">Default Button</button>
+        <button type="button" class="btn btn--lg btn--blue">Blue Button</button>
+        <button type="button" class="btn btn--lg btn--red">Red Button</button>
     </p>
     <p>
-        <button type="button" class="btn btn--default">Default</button>
-        <button type="button" class="btn btn--brand">Brand</button>
+        <button type="button" class="btn btn--default">Default Button</button>
+        <button type="button" class="btn btn--blue">Blue Button</button>
+        <button type="button" class="btn btn--red">Red Button</button>
     </p>
     <p>
-        <button type="button" class="btn btn--sm btn--default">Default</button>
-        <button type="button" class="btn btn--sm btn--brand">Brand</button>
+        <button type="button" class="btn btn--sm btn--default">Default Button</button>
+        <button type="button" class="btn btn--sm btn--blue">Blue Button</button>
+        <button type="button" class="btn btn--sm btn--red">Red Button</button>
     </p>
 
     <div class="page-header">

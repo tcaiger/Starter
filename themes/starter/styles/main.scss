@@ -5,25 +5,31 @@
 @charset "UTF-8";
 
 // 1. Settings
-@import 'settings.global',
+@import 'settings',
 
-// 2. Tools
-'tools.mixins',
-'tools.bootstrap',
+  // 2. Vendor
+'vendor/bootstrap',
+'vendor/slick',
+'vendor/slick-theme',
+'vendor/icheck',
 
-// 3. Generic
-'generic.fonts',
-'generic.page',
+  // 3. Tools
+'mixins',
 
-// 4. Elements
-'elements.typography',
+// 4. Generic (including 'elements')
+'generic/fonts',
+'generic/page',
+'generic/typography',
+'generic/forms',
 
-// 5. Objects
-'objects.overlays',
+// 6. Objects
+'objects/overlays',
 
-// 6. Components
-'components.buttons',
+// 7. Components
+'components/buttons',
+'components/header',
+'components/footer',
 
-// 7. Trumps
-'trumps.utilities';
+// 8. Trumps
+'trumps/utilities';
 
