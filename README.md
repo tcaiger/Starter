@@ -2,7 +2,6 @@
 A project starter for SilverStripe projects.
 
 ### Installation ###
-* Clone the repo to your project folder.
 * Run composer update from the project root to get required php packages and SilverStripe modules.
 * Run npm install from the theme root to get the javascript dependencies required for running grunt.
 * Add _config.php and rename themes folder.
