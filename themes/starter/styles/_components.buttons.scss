@@ -1,0 +1,72 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+.btn {
+  display          : inline-block;
+  font-size        : 16px;
+  margin-bottom    : 0; // For input.btn
+  font-weight      : normal;
+  text-align       : center;
+  vertical-align   : middle;
+  touch-action     : manipulation;
+  cursor           : pointer;
+  background-image : none; // Reset unusual Firefox-on-Android default style
+  border           : none;
+  white-space      : nowrap;
+  letter-spacing   : 1px;
+  text-transform   : uppercase;
+  transition       : 0.3s background-color ease, 0.3s color ease, 0.3s border ease;
+  padding          : 12px 50px 11px;
+  line-height      : 1.4;
+  border-radius    : 0;
+}
+
+.btn--default {
+
+}
+
+.btn--brand {
+  background-color : $brand;
+  color            : $white;
+  &:hover {
+    color            : $white;
+    background-color : $brand;
+  }
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn--lg {
+}
+
+.btn--sm {
+}
+
+// Block button
+// --------------------------------------------------
+
+.btn--block {
+  display : block;
+  width   : 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn--block + .btn--block {
+  margin-top : 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width : 100%;
+  }
+}
+
+// Remove blue box around buttons
+.btn:focus, button:focus {
+  outline : none !important;
+}

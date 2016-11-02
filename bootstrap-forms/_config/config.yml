@@ -1,0 +1,37 @@
+name: BootstrapForm
+---
+BootstrapForm:
+  bootstrap_included: true
+  jquery_included: true
+  bootstrap_form_included: true
+  inline_fields:
+    - CheckboxField
+    - FormAction
+FormField:
+  extensions:
+    - BootstrapFormField
+TextField:
+  extensions:
+    - BootstrapTextField
+OptionsetField:
+  extensions:
+    - BootstrapOptionsetField
+FormAction:
+  extensions:
+    - BootstrapFormAction
+TextareaField:
+  extensions:
+    - BootstrapTextField
+FieldList:
+  extensions:
+    - BootstrapFieldList
+Injector:
+  MemberLoginForm:
+    class: BootstrapMemberLoginForm
+---
+only:
+  moduleexists: userforms
+---
+UserDefinedForm_Controller:
+  extensions:
+    - BootstrapUserForm

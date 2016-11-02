@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    #ELEMENTS.TYPOGRAPHY
+\*------------------------------------*/
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  font-family : $headingFont;
+  line-height : 1.2;
+  margin      : 0;
+}
+
+h1, .h1 {
+  font-size : 46px;
+}
+
+h2, .h2 {
+  font-size : 36px;
+}
+
+h3, .h3 {
+  font-size : 16px;
+}
+
+h4, .h4 {
+  font-size : 16px;
+}
+
+// Body text
+// -------------------------
+p {
+  font-family : $bodyFont;
+  margin      : 0;
+}
+
+// Lists
+// -------------------------
+ul,
+ol {
+  margin-top    : 0;
+  margin-bottom : 0;
+  ul,
+  ol {
+    margin-bottom : 0;
+  }
+}
+
+
