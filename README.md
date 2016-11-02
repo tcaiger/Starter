@@ -5,8 +5,13 @@ A project starter for SilverStripe projects.
 * Clone the repo to your project folder.
 * Run composer update from the project root to get required php packages and SilverStripe modules.
 * Run npm install from the theme root to get the javascript dependencies required for running grunt.
-* Run grunt dev to watch and compile scss files.
 * Add _config.php and rename themes folder.
+* Run grunt dev to watch and compile scss files.
+
+### How to use it on a new project ###
+* Keep a copy of this repo on your machine.
+* Set up a brand new project on bit bucket.
+* After you've made the first commit, copy and paste the whole project, except the .git folder, into your new project folder.
 
 ### SCSS Styles ###
 * All scss is stored in the styles folder and compiles to css/main.min.css.
