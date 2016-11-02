@@ -13,5 +13,5 @@ A project starter for SilverStripe projects.
 * Copy and paste the whole project, except the .git folder, into your new project folder and make first commit.
 
 ### SCSS Styles ###
-* All scss is stored in the styles folder and compiles to css/main.min.css.
+* All scss is stored in the styles folder and compiles to css/main.css.
 * Css architecture is based on BEMIT, ITCSS and uses Bootstrap framework for reset, grid and some utility classes.
