@@ -11,7 +11,7 @@ A project starter for SilverStripe projects.
 ### How to use it on a new project ###
 * Keep a copy of this repo on your machine.
 * Set up a brand new project on bit bucket.
-* After you've made the first commit, copy and paste the whole project, except the .git folder, into your new project folder.
+* Copy and paste the whole project, except the .git folder, into your new project folder and make first commit.
 
 ### SCSS Styles ###
 * All scss is stored in the styles folder and compiles to css/main.min.css.
