@@ -20,6 +20,10 @@
   }
 }
 
+.form-group, .CompositeField, textarea {
+  vertical-align: middle;
+}
+
 .form-group label {
   display: none;
 }

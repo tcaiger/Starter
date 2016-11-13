@@ -2,88 +2,104 @@
     #.TRUMPS.Utilities
 \*------------------------------------*/
 
+
 // Layout
-.full-height {
+// -----------------
+.u-container{
+  max-width: 800px;
+  margin :0 auto;
+}
+.u-full-height {
   height : 100% !important;
 }
 
-.full-width {
+.u-full-width {
   width : 100% !important;
 }
 
+
+// Padding
+// -----------------
+.u-pt--sm {
+  padding-top:  4%;
+}
+.u-pt--md {
+  padding-top:  6%;
+}
+.u-pt--lg {
+  padding-top:  8%;
+}
+.u-pb--sm {
+  padding-bottom:  4%;
+}
+.u-pb--md {
+  padding-bottom:  6%;
+}
+.u-pb--lg {
+  padding-bottom:  8%;
+}
+
+
+
 // Background
-.background--blue {
+// -----------------
+.u-bg--red {
+  background-color : $red !important;
+}
+
+.u-bg--blue {
   background-color : $blue !important;
 }
 
+
 // Text colours
-.text-blue {
-  color : $blue;
+.u-text--blue {
+  color : $blue !important;
 }
 
-.text-red {
-  color : $red;
+.u-text--red {
+  color : $red !important;
 }
 
-.text-white {
-  color : $white;
+.u-text--yellow {
+  color : $yellow !important;
+}
+
+.u-text--white {
+  color : $white !important;
 }
 
 // Typography
-.text-left {
+.u-text--left {
   text-align : left;
 }
 
-.text-right {
+.u-text--right {
   text-align : right;
 }
 
-.text-center {
+.u-text--center {
   text-align : center;
 }
 
-.text-justify {
+.u-text--justify {
   text-align : justify;
 }
 
-.text-nowrap {
+.u-text--nowrap {
   white-space : nowrap;
 }
 
-.text-lowercase {
+.u-text--lowercase {
   text-transform : lowercase;
 }
 
-.text-uppercase {
+.u-text--uppercase {
   text-transform : uppercase;
 }
 
-.text-capitalize {
+.u-text--capitalize {
   text-transform : capitalize;
 }
 
-// List options
-// uses bootstrap mixins
 
-// [converter] extracted from `.list-unstyled` for libsass compatibility
-@mixin list-unstyled {
-  padding-left : 0;
-  list-style   : none;
-}
-
-// [converter] extracted as `@mixin list-unstyled` for libsass compatibility
-.list-unstyled {
-  @include list-unstyled;
-}
-
-// Inline turns list items into inline-block
-.list-inline {
-  @include list-unstyled;
-  margin-left : -5px;
-
-  > li {
-    display       : inline-block;
-    padding-left  : 5px;
-    padding-right : 5px;
-  }
-}
