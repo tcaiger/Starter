@@ -18,17 +18,18 @@
 
 // 4. Generic (including 'elements')
 'generic/fonts',
-'generic/page',
+'generic/default',
 'generic/typography',
 'generic/forms',
 
 // 6. Objects
-'objects/overlays',
+'layout/layout',
 
 // 7. Components
-'components/buttons',
 'components/header',
 'components/footer',
+'components/buttons',
+'components/overlays',
 
 // 8. Trumps
 'trumps/utilities';

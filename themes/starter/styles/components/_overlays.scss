@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #COMPONENTS.OVERLAYS
+\*------------------------------------*/
+
+.o-site-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+  &.active{
+    z-index: 1;
+  }
+}
+
+.o-hover-overlay {
+  transition : all 200ms ease-out;
+  position   : relative;
+  display    : block;
+
+  &:before {
+    content          : '';
+    display          : block;
+    position         : absolute;
+    z-index          : 10;
+    left             : 0;
+    right            : 0;
+    top              : 0;
+    bottom           : 0;
+
+    background-color : #FFFFFF;
+    opacity          : 0;
+    transition       : opacity 400ms ease-out;
+  }
+  &:hover {
+    cursor : pointer;
+    &:before {
+      opacity : 0.2;
+    }
+  }
+}
