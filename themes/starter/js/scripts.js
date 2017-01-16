@@ -9,7 +9,7 @@ $(document).ready(function () {
     SCRIPTS = {
         settings: {},
         init: function () {
-            //this.nav.init();
+            this.chosen.init();
         },
         nav: {
             button: $(),
@@ -20,7 +20,14 @@ $(document).ready(function () {
 
                 });
             }
-        }
+        },
+        chosen: {
+            init: function(){
+                if($('select.dropdown').length && !/iPad|iPhone|iPod/.test(navigator.userAgent)){
+                    $('select.dropdown').chosen({width: '100%'});
+                }
+            }
+        },
     }
     SCRIPTS.init();
 });

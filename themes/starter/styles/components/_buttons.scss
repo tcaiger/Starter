@@ -2,10 +2,11 @@
     #COMPONENTS.BUTTONS
 \*------------------------------------*/
 
-.btn {
+.c-btn {
   display          : inline-block;
   font-size        : 16px;
   margin-bottom    : 0;
+  margin-right     : 0.3em;
   font-weight      : normal;
   text-align       : center;
   vertical-align   : middle;
@@ -17,12 +18,12 @@
   letter-spacing   : 1px;
   text-transform   : uppercase;
   transition       : 0.3s background-color ease, 0.3s color ease, 0.3s border ease;
-  padding          : 12px 50px 11px;
+  padding          : 14px 50px;
   line-height      : 1.4;
   border-radius    : 0;
 }
 
-.btn--default {
+.c-btn--default {
   background-color : #aaaaaa;
   color            : #333;
   &:hover {
@@ -31,7 +32,7 @@
   }
 }
 
-.btn--primary {
+.c-btn--primary {
   background-color : $primary;
   color            : $white;
   &:hover {
@@ -40,7 +41,7 @@
   }
 }
 
-.btn--secondary {
+.c-btn--secondary {
   background-color : $secondary;
   color            : $white;
   &:hover {
@@ -52,26 +53,26 @@
 // Button Sizes
 // --------------------------------------------------
 
-.btn--lg {
-  font-size        : 18px;
-  padding          : 15px 60px 13px;
+.c-btn--lg {
+  font-size : 18px;
+  padding   : 15px 60px;
 }
 
-.btn--sm {
-  padding          : 6px 30px 5px;
-  font-size        : 14px;
+.c-btn--sm {
+  padding   : 8px 30px;
+  font-size : 14px;
 }
 
 // Block button
 // --------------------------------------------------
 
-.btn--block {
+.c-btn--block {
   display : block;
   width   : 100%;
 }
 
 // Vertically space out multiple block buttons
-.btn--block + .btn--block {
+.c-btn--block + .c-btn--block {
   margin-top : 5px;
 }
 
@@ -85,6 +86,6 @@ input[type="button"] {
 }
 
 // Remove blue box around buttons
-.btn:focus, button:focus {
+.c-btn:focus, button:focus {
   outline : none !important;
 }

@@ -21,19 +21,19 @@
         <h1>Buttons</h1>
     </div>
     <p>
-        <button type="button" class="btn btn--lg btn--default">Default Button</button>
-        <button type="button" class="btn btn--lg btn--blue">Blue Button</button>
-        <button type="button" class="btn btn--lg btn--red">Red Button</button>
+        <button type="button" class="c-btn c-btn--lg c-btn--default">Default Button</button>
+        <button type="button" class="c-btn c-btn--lg c-btn--primary">Blue Button</button>
+        <button type="button" class="c-btn c-btn--lg c-btn--secondary">Red Button</button>
     </p>
     <p>
-        <button type="button" class="btn btn--default">Default Button</button>
-        <button type="button" class="btn btn--blue">Blue Button</button>
-        <button type="button" class="btn btn--red">Red Button</button>
+        <button type="button" class="c-btn c-btn--default">Default Button</button>
+        <button type="button" class="c-btn c-btn--primary">Blue Button</button>
+        <button type="button" class="c-btn c-btn--secondary">Red Button</button>
     </p>
     <p>
-        <button type="button" class="btn btn--sm btn--default">Default Button</button>
-        <button type="button" class="btn btn--sm btn--blue">Blue Button</button>
-        <button type="button" class="btn btn--sm btn--red">Red Button</button>
+        <button type="button" class="c-btn c-btn--sm c-btn--default">Default Button</button>
+        <button type="button" class="c-btn c-btn--sm c-btn--primary">Blue Button</button>
+        <button type="button" class="c-btn c-btn--sm c-btn--secondary">Red Button</button>
     </p>
 
     <div class="page-header">
@@ -41,27 +41,65 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-8">
+
             <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name">
+                <fieldset>
+                    <div class="CompositeField field CompositeField composite nolabel">
+                        <div class="field text">
+                            <label class="left">First Name</label>
+                            <div class="middleColumn">
+                                <input type="text" class="text" placeholder="First Name *">
+                            </div>
+                        </div>
+                        <div class="field text">
+                            <label class="left">Surname</label>
+                            <div class="middleColumn">
+                                <input type="text" class="text" placeholder="Surname *">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CompositeField field CompositeField composite nolabel ">
+                        <div class="field text">
+                            <label class="left">Phone</label>
+                            <div class="middleColumn">
+                                <input type="text" class="text" placeholder="Phone *">
+                            </div>
+                        </div>
+                        <div class="field text">
+                            <label class="left">Email</label>
+                            <div class="middleColumn">
+                                <input type="text" class="text" placeholder="Email *">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field dropdown">
+                        <label class="left">How Did You Hear About Us?</label>
+                        <div class="middleColumn">
+                            <select class="dropdown">
+                                <option value="" selected="selected">How Did You Hear About Us?</option>
+                                <option value="Google">Google</option>
+                                <option value="Other Search Engine">Other Search Engine</option>
+                                <option value="Advertisement">Advertisement</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Word Of Mouth">Word Of Mouth</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field textarea">
+                        <label class="left" for="Form_ContactForm_Message">Message</label>
+                        <div class="middleColumn">
+                            <textarea class="textarea" placeholder="Message *" rows="8" cols="20"></textarea>
+                        </div>
+                    </div>
+                    <div class="clear"><!-- --></div>
+                </fieldset>
+                <div class="Actions">
+                    <button type="submit" class="action c-btn c-btn--primary">Send Message</button>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" placeholder="Enter a message here" rows="4"></textarea>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Check me out
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-brand">Submit</button>
             </form>
+
         </div>
     </div>
 
@@ -169,21 +207,11 @@
     </div>
 
 
-
     <div class="page-header">
         <h1>Alerts</h1>
-    </div>
-    <div class="alert alert-success" role="alert">
-        <strong>Well done!</strong> You successfully read this important alert message.
-    </div>
-    <div class="alert alert-info" role="alert">
-        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-    </div>
-    <div class="alert alert-warning" role="alert">
-        <strong>Warning!</strong> Best check yo self, you're not looking too good.
-    </div>
-    <div class="alert alert-danger" role="alert">
-        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        <p class="message good">You successfully read this important <strong>alert</strong> message.</p>
+        <p class="message bad">You successfully read this important alert message.</p>
+        <p class="message warning">You successfully read this important alert message.</p>
     </div>
 
 

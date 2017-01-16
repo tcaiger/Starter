@@ -18,14 +18,21 @@ class Page_Controller extends ContentController {
         Requirements::css("{$this->ThemeDir()}/css/main.css");
 
 
-        // Combine and include js
+        // Combine and include js (stop minifying)
         Requirements::combine_files(
             'main.js',
-            array(
-                "//code.jquery.com/jquery-2.2.3.min.js",
-                "//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js",
+            [
+                "{$this->ThemeDir()}/js/vendor/jquery.min.js",
+                "{$this->ThemeDir()}/js/vendor/bootstrap.min.js",
+                "{$this->ThemeDir()}/js/vendor/matchHeight.min.js",
+                "{$this->ThemeDir()}/js/vendor/icheck.min.js",
+                "{$this->ThemeDir()}/js/vendor/slick.min.js",
+                "{$this->ThemeDir()}/js/vendor/jqueryui.min.js",
+                "{$this->ThemeDir()}/js/vendor/chosen.jquery.min.js",
                 "{$this->ThemeDir()}/js/scripts.js"
-            ));
+            ]);
+
+        Requirements::backend()->combine_js_with_jsmin = false;
     }
 
 
