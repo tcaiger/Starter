@@ -123,7 +123,7 @@ $.fn.imagesLoaded = function( callback ) {
 
 var Grid = (function () {
 
-    var $selector = '#og-grid',
+    var $selector = '.js-grid',
         $grid = $($selector),
         $items = $grid.children('li'),
         current = -1,
@@ -175,7 +175,7 @@ var Grid = (function () {
     function initEvents() {
 
 
-        $items.on('click', 'span.og-close', function () {
+        $items.on('click', 'span.c-expander__close', function () {
 
             hidePreview();
             return false;
@@ -246,12 +246,12 @@ var Grid = (function () {
             this.$title = $('<h3></h3>');
             this.$description = $('<p></p>');
             this.$href = $('<a href="#">Visit website</a>');
-            this.$details = $('<div class="og-details"></div>').append(this.$title, this.$description, this.$href);
-            this.$loading = $('<div class="og-loading"></div>');
-            this.$fullimage = $('<div class="og-fullimg"></div>').append(this.$loading);
-            this.$closePreview = $('<span class="og-close"></span>');
-            this.$previewInner = $('<div class="og-expander-inner"></div>').append(this.$closePreview, this.$fullimage, this.$details);
-            this.$previewEl = $('<div class="og-expander"></div>').append(this.$previewInner);
+            this.$details = $('<div class="c-expander__details"></div>').append(this.$title, this.$description, this.$href);
+            this.$loading = $('<div class="c-expander__loading"></div>');
+            this.$fullimage = $('<div class="c-expander__fullimg"></div>').append(this.$loading);
+            this.$closePreview = $('<span class="c-expander__close"></span>');
+            this.$previewInner = $('<div class="c-expander__inner"></div>').append(this.$closePreview, this.$fullimage, this.$details);
+            this.$previewEl = $('<div class="c-expander"></div>').append(this.$previewInner);
             // append preview element to the item
             this.$item.append(this.getEl());
             // set the transitions for the preview and the item
@@ -268,8 +268,8 @@ var Grid = (function () {
             // if already expanded, remove class "og-expanded" from current item and add it to new item
             if (current !== -1) {
                 var $currentItem = $items.eq(current);
-                $currentItem.removeClass('og-expanded');
-                this.$item.addClass('og-expanded');
+                $currentItem.removeClass('c-preview--expanded');
+                this.$item.addClass('c-preview--expanded');
 
                 this.positionPreview();
             }
@@ -320,7 +320,7 @@ var Grid = (function () {
                     if(support){
                         self.$item.off(transEndEventName);
                     }
-                    self.$item.addClass('og-expanded');
+                    self.$item.addClass('c-preview--expanded');
                 };
 
             this.calcHeight();
@@ -362,7 +362,7 @@ var Grid = (function () {
                     if( support ) {
                         $( this ).off( transEndEventName );
                     }
-                    self.$item.removeClass( 'og-expanded' );
+                    self.$item.removeClass( 'c-preview--expanded' );
                     self.$previewEl.remove();
                 };
 
