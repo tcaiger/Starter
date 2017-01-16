@@ -2905,10 +2905,10 @@ input[type="button"].btn-block {
 
 .c-preview > a,
 .c-preview > a img {
+  position: relative;
   border: none;
   outline: none;
   display: block;
-  position: relative;
   width: 100%; }
 
 .c-preview.c-preview--expanded > a::after {
@@ -2924,6 +2924,22 @@ input[type="button"].btn-block {
   left: 50%;
   margin: -20px 0 0 -15px; }
 
+.c-preview__inner {
+  position: absolute;
+  padding: 20% 10% 10%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background: rgba(10, 10, 10, 0.8);
+  -webkit-transition: opacity 0.3s ease;
+          transition: opacity 0.3s ease;
+  color: #FFFFFF; }
+  .c-preview__inner:hover {
+    cursor: pointer;
+    opacity: 1; }
+
 .c-expander {
   position: absolute;
   background: #ddd;
@@ -2934,6 +2950,31 @@ input[type="button"].btn-block {
   text-align: left;
   height: 0;
   overflow: hidden; }
+
+.c-expander__prev,
+.c-expander__next {
+  position: absolute;
+  display: block;
+  top: 50%;
+  height: 100px;
+  width: 40px;
+  background: #aaa;
+  color: #333;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: background 0.3s ease;
+          transition: background 0.3s ease; }
+  .c-expander__prev:hover,
+  .c-expander__next:hover {
+    background: #666;
+    cursor: pointer; }
+
+.c-expander__prev {
+  left: 0; }
+
+.c-expander__next {
+  right: 0; }
 
 .c-expander__inner {
   padding: 50px 30px;

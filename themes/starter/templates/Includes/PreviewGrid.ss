@@ -2,6 +2,10 @@
     <li class="c-preview">
         <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="$ThemeDir/images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
             <img src="$ThemeDir/images/thumbs/1.jpg" alt="img01"/>
+            <div class="c-preview__inner">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut dicta hic.</p>
+            </div>
         </a>
     </li>
     <li class="c-preview">
