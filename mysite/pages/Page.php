@@ -29,6 +29,8 @@ class Page_Controller extends ContentController {
                 "{$this->ThemeDir()}/js/vendor/slick.min.js",
                 "{$this->ThemeDir()}/js/vendor/jqueryui.min.js",
                 "{$this->ThemeDir()}/js/vendor/chosen.jquery.min.js",
+                "{$this->ThemeDir()}/js/vendor/modernizer.js",
+                "{$this->ThemeDir()}/js/grid.js",
                 "{$this->ThemeDir()}/js/scripts.js"
             ]);
 

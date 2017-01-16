@@ -1,0 +1,240 @@
+<div class="container">
+
+    <div class="page-header">
+        <h1>Headings</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+        </div>
+        <div class="col-sm-6">
+            <h1 class="text-blue">Brand Color</h1>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>Buttons</h1>
+    </div>
+    <p>
+        <button type="button" class="c-btn c-btn--lg c-btn--default">Default Button</button>
+        <button type="button" class="c-btn c-btn--lg c-btn--primary">Blue Button</button>
+        <button type="button" class="c-btn c-btn--lg c-btn--secondary">Red Button</button>
+    </p>
+    <p>
+        <button type="button" class="c-btn c-btn--default">Default Button</button>
+        <button type="button" class="c-btn c-btn--primary">Blue Button</button>
+        <button type="button" class="c-btn c-btn--secondary">Red Button</button>
+    </p>
+    <p>
+        <button type="button" class="c-btn c-btn--sm c-btn--default">Default Button</button>
+        <button type="button" class="c-btn c-btn--sm c-btn--primary">Blue Button</button>
+        <button type="button" class="c-btn c-btn--sm c-btn--secondary">Red Button</button>
+    </p>
+
+    <div class="page-header">
+        <h1>Forms</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <form>
+                <fieldset>
+                    <div class="CompositeField field CompositeField composite nolabel">
+                        <div class="field text">
+                            <label class="left">First Name</label>
+                            <div class="middleColumn">
+                                <input type="text" class="text" placeholder="First Name *">
+                            </div>
+                        </div>
+                        <div class="field text">
+                            <label class="left">Surname</label>
+                            <div class="middleColumn">
+                                <input type="text" class="text" placeholder="Surname *">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CompositeField field CompositeField composite nolabel ">
+                        <div class="field text">
+                            <label class="left">Phone</label>
+                            <div class="middleColumn">
+                                <input type="text" class="text" placeholder="Phone *">
+                            </div>
+                        </div>
+                        <div class="field text">
+                            <label class="left">Email</label>
+                            <div class="middleColumn">
+                                <input type="text" class="text" placeholder="Email *">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field dropdown">
+                        <label class="left">How Did You Hear About Us?</label>
+                        <div class="middleColumn">
+                            <select class="dropdown">
+                                <option value="" selected="selected">How Did You Hear About Us?</option>
+                                <option value="Google">Google</option>
+                                <option value="Other Search Engine">Other Search Engine</option>
+                                <option value="Advertisement">Advertisement</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Word Of Mouth">Word Of Mouth</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field textarea">
+                        <label class="left" for="Form_ContactForm_Message">Message</label>
+                        <div class="middleColumn">
+                            <textarea class="textarea" placeholder="Message *" rows="8" cols="20"></textarea>
+                        </div>
+                    </div>
+                    <div class="clear"><!-- --></div>
+                </fieldset>
+                <div class="Actions">
+                    <button type="submit" class="action c-btn c-btn--primary">Send Message</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>Paragraphs</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <p class="p--lg">
+                Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a>
+                adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec
+                faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero
+                nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent
+                mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu
+                volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus
+                eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem,
+                consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue
+                quis tellus.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing
+                elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus.
+                Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem. Aliquam libero nisi,
+                imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis,
+                massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim
+                diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien
+                fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at,
+                commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>Tables</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>Alerts</h1>
+        <p class="message good">You successfully read this important <strong>alert</strong> message.</p>
+        <p class="message bad">You successfully read this important alert message.</p>
+        <p class="message warning">You successfully read this important alert message.</p>
+    </div>
+
+
+    <div class="page-header">
+        <h1>Lists</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <ul class="list-group">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div><!-- /.col-sm-4 -->
+    </div>
+
+    <div class="page-header">
+        <h1>Preview Grid</h1>
+    </div>
+    <% include PreviewGrid %>
+
+    <div style="width: 100%; height: 60px;"></div>
+
+</div> <!-- /container -->

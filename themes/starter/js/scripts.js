@@ -10,6 +10,7 @@ $(document).ready(function () {
         settings: {},
         init: function () {
             this.chosen.init();
+            this.previewGrid.init();
         },
         nav: {
             button: $(),
@@ -28,6 +29,11 @@ $(document).ready(function () {
                 }
             }
         },
+        previewGrid: {
+            init: function(){
+                Grid.init();
+            }
+        }
     }
     SCRIPTS.init();
 });
