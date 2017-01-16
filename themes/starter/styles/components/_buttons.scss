@@ -24,27 +24,27 @@
 
 .btn--default {
   background-color : #aaaaaa;
-  color            : $black;
+  color            : #333;
   &:hover {
     background-color : #666666;
     color            : $white;
   }
 }
 
-.btn--blue {
-  background-color : $blue;
+.btn--primary {
+  background-color : $primary;
   color            : $white;
   &:hover {
-    background-color : $blue;
+    background-color : darken($primary, 10%);
     color            : $white;
   }
 }
 
-.btn--red {
-  background-color : $red;
+.btn--secondary {
+  background-color : $secondary;
   color            : $white;
   &:hover {
-    background-color : $red;
+    background-color : darken($secondary, 10%);
     color            : $white;
   }
 }
