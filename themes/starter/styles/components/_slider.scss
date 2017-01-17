@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    #COMPONENTS.SLIDER
+\*------------------------------------*/
+.c-slider__items {
+  position : relative;
+}
+
+.c-slide {
+  height : 500px;
+}
+
+.c-slider__next,
+.c-slider__prev {
+  position   : absolute;
+  display    : block;
+  top        : 50%;
+  transform  : translate(0, -50%);
+  width      : 40px;
+  height     : 60px;
+  background : #333;
+  z-index    : 10;
+  transition: background 0.3s ease;
+  &:before {
+    transform   : translate(0, -50%);
+    position    : absolute;
+    top         : 50%;
+    font-family : icomoon !important;
+    color       : $white;
+  }
+  &:hover{
+    cursor: pointer;
+    background: #666;
+  }
+}
+
+.c-slider__prev {
+  left : 0;
+  &:before {
+    left: 25%;
+    content : "\e901";
+  }
+}
+
+.c-slider__next {
+  right : 0;
+  &:before {
+    right :25%;
+    content : "\e902";
+  }
+}

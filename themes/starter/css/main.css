@@ -2920,6 +2920,54 @@ Form .chosen-container-single .chosen-single {
   .c-nav__contact a:hover {
     color: #c0392b; }
 
+/*------------------------------------*    #COMPONENTS.SLIDER
+\*------------------------------------*/
+.c-slider__items {
+  position: relative; }
+
+.c-slide {
+  height: 500px; }
+
+.c-slider__next,
+.c-slider__prev {
+  position: absolute;
+  display: block;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 40px;
+  height: 60px;
+  background: #333;
+  z-index: 10;
+  -webkit-transition: background 0.3s ease;
+          transition: background 0.3s ease; }
+  .c-slider__next:before,
+  .c-slider__prev:before {
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    position: absolute;
+    top: 50%;
+    font-family: icomoon !important;
+    color: #FFFFFF; }
+  .c-slider__next:hover,
+  .c-slider__prev:hover {
+    cursor: pointer;
+    background: #666; }
+
+.c-slider__prev {
+  left: 0; }
+  .c-slider__prev:before {
+    left: 25%;
+    content: "\e901"; }
+
+.c-slider__next {
+  right: 0; }
+  .c-slider__next:before {
+    right: 25%;
+    content: "\e902"; }
+
 /*------------------------------------*    #COMPONENTS.FOOTER
 \*------------------------------------*/
 .c-footer i, .c-footer p, .c-footer a {
@@ -3407,6 +3455,27 @@ input[type="button"].btn-block {
   .c-expander__details {
     float: none;
     width: 100%; } }
+
+/*------------------------------------*    #TRUMPS.FOCUSPOINT
+\*------------------------------------*/
+.t-focuspoint {
+  position: relative;
+  /*Any position but static should work*/
+  overflow: hidden; }
+
+.t-focuspoint img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  display: block;
+  /* fill and maintain aspect ratio */
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: none;
+  max-width: none; }
 
 /*------------------------------------*    #TRUMPS.UTILITIES
 \*------------------------------------*/

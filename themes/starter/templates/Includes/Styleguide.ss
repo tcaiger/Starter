@@ -1,4 +1,7 @@
-<div class="container">
+<% include Slider %>
+
+
+<main class="container">
 
     <div class="page-header">
         <h1>Headings</h1>
@@ -183,4 +186,4 @@
 
     <div style="width: 100%; height: 60px;"></div>
 
-</div> <!-- /container -->
+</main> <!-- /container -->

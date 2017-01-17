@@ -11,6 +11,7 @@ $(document).ready(function () {
         init: function () {
             this.nav.init();
             this.icheck.init();
+            this.slick.init();
             this.chosen.init();
             this.smoothScroll.init();
             this.previewGrid.init();
@@ -58,15 +59,33 @@ $(document).ready(function () {
                 }
             },
         },
+        slick: {
+            settings: {
+                slidesToShow: 1,
+                lazyLoad: 'progressive',
+                dots: false,
+                // autoplay: true,
+                // fade: true,
+                prevArrow: "<span class='c-slider__prev'></span>",
+                nextArrow: "<span class='c-slider__next'></span>"
+            },
+            slider: $('.js-slick'),
+            init: function () {
+                if(this.slider){
+                    this.slider.slick(this.settings);
+                    $('.t-focuspoint').focusPoint();
+                }
+            }
+        },
         chosen: {
-            init: function(){
-                if($('select.dropdown').length && !/iPad|iPhone|iPod/.test(navigator.userAgent)){
+            init: function () {
+                if ($('select.dropdown').length && !/iPad|iPhone|iPod/.test(navigator.userAgent)) {
                     $('select.dropdown').chosen({width: '100%'});
                 }
             }
         },
         previewGrid: {
-            init: function(){
+            init: function () {
                 Grid.init();
             }
         }
