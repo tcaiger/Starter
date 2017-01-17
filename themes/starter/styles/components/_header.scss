@@ -1,3 +1,132 @@
 /*------------------------------------*\
     #COMPONENTS.HEADER
 \*------------------------------------*/
+
+$top-padding : 20px;
+
+.c-header {
+  position : relative;
+  @include responsive('padding-top', 0.4* $top-padding, 0.5* $top-padding, 0.8* $top-padding, $top-padding);
+  @include responsive('padding-bottom', 30px);
+  &.active {
+    .c-nav {
+      display : block;
+    }
+    .icon-menu {
+      display : none;
+    }
+    .icon-cross {
+      display : block;
+    }
+  }
+}
+
+.c-header__brand {
+  display : inline-block;
+  float   : left;
+  img {
+    max-height : 100%;
+    @include responsive('width', 140px, 180px, 200px);
+  }
+}
+
+.c-header__menu {
+
+  float : right;
+  @include responsive('padding-top', 0.5em, 1em);
+  .icon-menu {
+    display   : block;
+    font-size : 32px;
+    color     : #333;
+    &:hover {
+      color  : #666;
+      cursor : pointer;
+    }
+  }
+  .icon-cross {
+    display   : none;
+    z-index   : 50;
+    position  : relative;
+    top       : -10px;
+    left      : 7px;
+    font-size : 56px;
+    color     : $white;
+    &:hover {
+      cursor : pointer;
+    }
+  }
+}
+
+/*------------------------------------*\
+    #COMPONENTS.NAV
+\*------------------------------------*/
+.c-nav {
+  position    : absolute;
+  display     : none;
+  user-select : none;
+  top         : 0;
+  right       : -1000px;
+  padding     : 100px 1000px 50px 50px;
+  min-height  : 500px;
+  text-align  : right;
+  background  : rgba(10, 10, 10, 0.95);
+  z-index     : 10;
+}
+
+.c-nav__list {
+  margin-top : 2em;
+}
+
+.c-nav__item {
+  padding-left : 100px;
+  transition   : background 0.3s ease;
+  &:hover {
+    background : rgba(60, 60, 60, 0.9);
+  }
+}
+
+.c-nav__link {
+  display     : block;
+  padding     : 5px;
+  color       : $white;
+  background  : none;
+  font-size   : 24px;
+  font-weight : 600;
+  transition  : color 0.3s ease;
+  &:hover {
+    color : $white;
+  }
+  &:focus {
+    color : $white;
+  }
+}
+
+.c-nav__footer {
+  position   : relative;
+  margin-top : 4em;
+  padding    : 2em 0 3em 0;
+  border-top : 1px solid $white;
+  i {
+    font-size : 24px;
+    transition: color 0.3s ease;
+    &:hover{
+      color: $primary;
+    }
+  }
+}
+
+.c-nav__socials {
+  position : absolute;
+  left     : 10px;
+  top      : 2.6em;
+}
+
+.c-nav__contact {
+  a {
+    color : $white;
+    transition: color 0.3s ease;
+    &:hover{
+      color: $primary;
+    }
+  }
+}
