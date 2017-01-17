@@ -65,16 +65,20 @@ $top-padding : 20px;
   display     : none;
   user-select : none;
   top         : 0;
-  right       : -1000px;
-  padding     : 100px 1000px 50px 50px;
+  right       : -15px;
+  padding     : 100px 30px 50px 50px;
   min-height  : 500px;
   text-align  : right;
   background  : rgba(10, 10, 10, 0.95);
   z-index     : 10;
+  @media screen and (min-width: $screen-sm){
+    right       : -1000px;
+    padding     : 100px 1000px 50px 50px;
+  }
 }
 
 .c-nav__list {
-  margin-top : 2em;
+  margin-top : 1.5em;
 }
 
 .c-nav__item {
@@ -106,6 +110,12 @@ $top-padding : 20px;
   margin-top : 4em;
   padding    : 2em 0 3em 0;
   border-top : 1px solid $white;
+}
+
+.c-nav__socials {
+  position : absolute;
+  left     : 10px;
+  top      : 2.6em;
   i {
     font-size : 24px;
     transition: color 0.3s ease;
@@ -113,12 +123,6 @@ $top-padding : 20px;
       color: $primary;
     }
   }
-}
-
-.c-nav__socials {
-  position : absolute;
-  left     : 10px;
-  top      : 2.6em;
 }
 
 .c-nav__contact {
