@@ -10,12 +10,12 @@ textarea.textarea {
   border-radius : 0;
   height        : 50px;
   border        : 1px solid #ccc;
-  box-shadow: none;
+  box-shadow    : none;
   margin-bottom : 15px;
 
-  &:focus{
-    border: none;
-    box-shadow: none;
+  &:focus {
+    box-shadow : none;
+    outline    : none
   }
 }
 
@@ -24,14 +24,13 @@ textarea.textarea {
 }
 
 textarea.textarea {
-  height : auto;
-  padding-top :8px;
+  height      : auto;
+  padding-top : 8px;
 }
 
 .field.dropdown {
   margin-bottom : 15px;
 }
-
 
 .CompositeField {
   // set to zero to remove white space
@@ -49,16 +48,15 @@ textarea.textarea {
 }
 
 Form .chosen-container-single .chosen-single {
-  font-size     : 14px;
+  font-size     : 15px;
   padding-left  : 10px;
-  font-weight   : 500;
-  color         : #333;
+  color         : #999;
   border-radius : 0;
-  height        : 44px;
+  height        : 50px;
   border        : 1px solid #ccc;
   background    : $white;
   box-shadow    : none;
-  padding-top   : 9px;
+  padding-top   : 11px;
 
   &:focus {
     border     : 1px solid #333;
@@ -67,28 +65,45 @@ Form .chosen-container-single .chosen-single {
 }
 
 .chosen-single {
-  //&:before {
-  //  content          : '';
-  //  @include vertical-align(absolute);
-  //  right            : 5px;
-  //  width            : 20px;
-  //  height           : 20px;
-  //  @include contain();
-  //  background-image : url('../images/down-arrow.svg');
-  //}
+  &:before {
+    position    : absolute;
+    font-family : 'icomoon' !important;
+    content     : "\e900";
+    font-size   : 12px;
+    right       : 5px;
+    width       : 20px;
+    height      : 20px;
+  }
   div b {
+    display : none !important;
   }
 }
 
-//.field.dropdown {
-//  &:before {
-//    content          : '';
-//    position         : absolute;
-//    top              : 20%;
-//    right            : 5px;
-//    width            : 20px;
-//    height           : 20px;
-//    @include contain();
-//    background-image : url('../images/down-arrow.svg');
-//  }
-//}
+
+/*------------------------------------*\
+    #COMPONENTS.MESSAGE
+\*------------------------------------*/
+.message{
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  padding: 7px 15px;
+  margin: -8px 0 15px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  &.good{
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+  }
+  &.warning{
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+  }
+  &.bad, &.required, &.validation{
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+  }
+}

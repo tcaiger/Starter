@@ -43,62 +43,8 @@
     <div class="row">
         <div class="col-md-8">
 
-            <form>
-                <fieldset>
-                    <div class="CompositeField field CompositeField composite nolabel">
-                        <div class="field text">
-                            <label class="left">First Name</label>
-                            <div class="middleColumn">
-                                <input type="text" class="text" placeholder="First Name *">
-                            </div>
-                        </div>
-                        <div class="field text">
-                            <label class="left">Surname</label>
-                            <div class="middleColumn">
-                                <input type="text" class="text" placeholder="Surname *">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="CompositeField field CompositeField composite nolabel ">
-                        <div class="field text">
-                            <label class="left">Phone</label>
-                            <div class="middleColumn">
-                                <input type="text" class="text" placeholder="Phone *">
-                            </div>
-                        </div>
-                        <div class="field text">
-                            <label class="left">Email</label>
-                            <div class="middleColumn">
-                                <input type="text" class="text" placeholder="Email *">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field dropdown">
-                        <label class="left">How Did You Hear About Us?</label>
-                        <div class="middleColumn">
-                            <select class="dropdown">
-                                <option value="" selected="selected">How Did You Hear About Us?</option>
-                                <option value="Google">Google</option>
-                                <option value="Other Search Engine">Other Search Engine</option>
-                                <option value="Advertisement">Advertisement</option>
-                                <option value="Facebook">Facebook</option>
-                                <option value="Word Of Mouth">Word Of Mouth</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="field textarea">
-                        <label class="left" for="Form_ContactForm_Message">Message</label>
-                        <div class="middleColumn">
-                            <textarea class="textarea" placeholder="Message *" rows="8" cols="20"></textarea>
-                        </div>
-                    </div>
-                    <div class="clear"><!-- --></div>
-                </fieldset>
-                <div class="Actions">
-                    <button type="submit" class="action c-btn c-btn--primary">Send Message</button>
-                </div>
-            </form>
+            $ContactForm
+
 
         </div>
     </div>

@@ -2719,8 +2719,8 @@ textarea.textarea {
   margin-bottom: 15px; }
   input.text:focus,
   textarea.textarea:focus {
-    border: none;
-    box-shadow: none; }
+    box-shadow: none;
+    outline: none; }
 
 .textarea label, .dropdown label, .text label {
   display: none; }
@@ -2742,19 +2742,53 @@ textarea.textarea {
         margin-right: 4%; } }
 
 Form .chosen-container-single .chosen-single {
-  font-size: 14px;
+  font-size: 15px;
   padding-left: 10px;
-  font-weight: 500;
-  color: #333;
+  color: #999;
   border-radius: 0;
-  height: 44px;
+  height: 50px;
   border: 1px solid #ccc;
   background: #FFFFFF;
   box-shadow: none;
-  padding-top: 9px; }
+  padding-top: 11px; }
   Form .chosen-container-single .chosen-single:focus {
     border: 1px solid #333;
     box-shadow: none; }
+
+.chosen-single:before {
+  position: absolute;
+  font-family: 'icomoon' !important;
+  content: "\e900";
+  font-size: 12px;
+  right: 5px;
+  width: 20px;
+  height: 20px; }
+
+.chosen-single div b {
+  display: none !important; }
+
+/*------------------------------------*    #COMPONENTS.MESSAGE
+\*------------------------------------*/
+.message {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  padding: 7px 15px;
+  margin: -8px 0 15px;
+  border: 1px solid transparent;
+  border-radius: 2px; }
+  .message.good {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d; }
+  .message.warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b; }
+  .message.bad, .message.required, .message.validation {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442; }
 
 /*------------------------------------*    #LAYOUT.LAYOUT
 \*------------------------------------*/
@@ -3148,26 +3182,6 @@ input[type="button"].btn-block {
 
 .c-icon__holder {
   display: inline-block; }
-
-/*------------------------------------*    #COMPONENTS.MESSAGE
-\*------------------------------------*/
-.message {
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  border-radius: 4px; }
-  .message.good {
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    color: #3c763d; }
-  .message.warning {
-    background-color: #fcf8e3;
-    border-color: #faebcc;
-    color: #8a6d3b; }
-  .message.bad, .message .required, .message .validation {
-    background-color: #f2dede;
-    border-color: #ebccd1;
-    color: #a94442; }
 
 /*------------------------------------*    #COMPONENTS.PREVIEW-GRID
 \*------------------------------------*/

@@ -12,6 +12,10 @@ class Page extends SiteTree {
 
 class Page_Controller extends ContentController {
 
+    private static $allowed_actions = [
+      'ContactForm'
+    ];
+
 
     public function init() {
         parent::init();
@@ -35,6 +39,10 @@ class Page_Controller extends ContentController {
             ]);
 
         Requirements::backend()->combine_js_with_jsmin = false;
+    }
+
+    public function ContactForm(){
+        return new ContactForm($this, 'ContactForm');
     }
 
 
