@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .t-focuspoint {
-  position: relative; /*Any position but static should work*/
+  position: absolute; /*Any position but static should work*/
   overflow: hidden;
 }
 .t-focuspoint img {

@@ -65,7 +65,9 @@ $(document).ready(function () {
                 lazyLoad: 'progressive',
                 dots: false,
                 // autoplay: true,
-                // fade: true,
+                useTransform: true,
+                fade: true,
+                cssEase: 'linear',
                 prevArrow: "<span class='c-slider__prev'></span>",
                 nextArrow: "<span class='c-slider__next'></span>"
             },
@@ -74,7 +76,22 @@ $(document).ready(function () {
                 if(this.slider){
                     this.slider.slick(this.settings);
                     $('.t-focuspoint').focusPoint();
+                    this.events();
                 }
+            },
+            events: function(){
+                var _this = this;
+                this.slider.on('afterChange',function () {
+
+                    $('.c-slide h2, .c-slide a').removeClass('active');
+                    var current = $('.js-slick .slick-current');
+                    current.find('h2').addClass('active');
+                    setTimeout(function(){
+
+                    current.find('a').addClass('active');
+                    }, 700);
+
+                });
             }
         },
         chosen: {
