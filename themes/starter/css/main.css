@@ -2629,10 +2629,10 @@ html {
   height: 100%; }
 
 body {
-  font-family: "Lato", Calibri, Arial, sans-serif;
+  font-family: "Museo Sans", Calibri, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  background: #f9f9f9;
+  background: #FFFFFF;
   font-weight: 300;
   color: #333;
   overflow: scroll;
@@ -2642,23 +2642,61 @@ body {
 \*------------------------------------*/
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
+  font-family: "Museo Sans", Calibri, Arial, sans-serif;
+  color: #333;
+  text-transform: uppercase;
   line-height: 1.2;
-  margin: 0 0 0.5em; }
+  margin: 0 0 0.3em; }
 
 h1, .h1 {
-  font-size: 50px; }
+  font-weight: 700;
+  font-size: 30.8px; }
+  @media screen and (min-width: 480px) {
+    h1, .h1 {
+      font-size: 35.2px; } }
+  @media screen and (min-width: 768px) {
+    h1, .h1 {
+      font-size: 44px; } }
 
 h2, .h2 {
-  font-size: 36px; }
+  font-weight: 700;
+  font-size: 25.2px; }
+  @media screen and (min-width: 480px) {
+    h2, .h2 {
+      font-size: 28.8px; } }
+  @media screen and (min-width: 768px) {
+    h2, .h2 {
+      font-size: 36px; } }
 
 h3, .h3 {
-  font-size: 32px; }
+  font-weight: 900;
+  font-size: 25.6px; }
+  @media screen and (min-width: 480px) {
+    h3, .h3 {
+      font-size: 28.8px; } }
+  @media screen and (min-width: 768px) {
+    h3, .h3 {
+      font-size: 32px; } }
 
 h4, .h4 {
-  font-size: 24px; }
+  font-weight: 900;
+  font-size: 21.6px; }
+  @media screen and (min-width: 480px) {
+    h4, .h4 {
+      font-size: 24px; } }
+  @media screen and (min-width: 768px) {
+    h4, .h4 {
+      font-size: 24px; } }
 
 h5, .h5 {
-  font-size: 18px; }
+  font-weight: 900;
+  font-size: 16.2px; }
+  @media screen and (min-width: 480px) {
+    h5, .h5 {
+      font-size: 18px; } }
+  @media screen and (min-width: 768px) {
+    h5, .h5 {
+      font-size: 18px; } }
 
 .page-header {
   padding-bottom: 5px;
@@ -2792,6 +2830,17 @@ Form .chosen-container-single .chosen-single {
 
 /*------------------------------------*    #LAYOUT.LAYOUT
 \*------------------------------------*/
+.l-maxWidth {
+  max-width: 1650px !important; }
+  @media screen and (min-width: 1200px) {
+    .l-maxWidth {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media screen and (min-width: 1500px) {
+    .l-maxWidth {
+      padding-left: 50px;
+      padding-right: 50px; } }
+
 /*------------------------------------*    #COMPONENTS.HEADER
 \*------------------------------------*/
 .c-header {
@@ -2863,7 +2912,7 @@ Form .chosen-container-single .chosen-single {
   top: 0;
   right: -15px;
   padding: 100px 30px 50px 50px;
-  min-height: 500px;
+  min-height: 100vh;
   text-align: right;
   background: rgba(10, 10, 10, 0.95);
   z-index: 50; }
@@ -3096,7 +3145,7 @@ Form .chosen-container-single .chosen-single {
 
 /*------------------------------------*    #COMPONENTS.BUTTONS
 \*------------------------------------*/
-.c-btn {
+.c-btn--default, .c-btn--primary, .c-btn--secondary {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 0;
@@ -3269,7 +3318,7 @@ input[type="button"].btn-block {
 .c-icon__holder {
   display: inline-block; }
 
-/*------------------------------------*    #COMPONENTS.PREVIEW-GRID
+/*------------------------------------*    #COMPONENTS.PREVIEW
 \*------------------------------------*/
 .c-preview__container {
   list-style: none;
@@ -3325,6 +3374,8 @@ input[type="button"].btn-block {
     cursor: pointer;
     opacity: 1; }
 
+/*------------------------------------*    #COMPONENTS.EXPANDER
+\*------------------------------------*/
 .c-expander {
   position: absolute;
   background: #ddd;

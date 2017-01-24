@@ -31,7 +31,7 @@ class ContactForm extends Form {
 
         $actions = new FieldList(
             FormAction::create('submitcontactform', 'Send Message')
-                ->addExtraClass('c-btn c-btn--primary')
+                ->addExtraClass('c-btn--primary')
                 ->setUseButtonTag(true)
         );
 

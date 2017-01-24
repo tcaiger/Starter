@@ -2,7 +2,7 @@
     #COMPONENTS.BUTTONS
 \*------------------------------------*/
 
-.c-btn {
+%btn {
   display          : inline-block;
   font-size        : 16px;
   margin-bottom    : 0;
@@ -24,6 +24,7 @@
 }
 
 .c-btn--default {
+  @extend %btn;
   background-color : #aaaaaa;
   color            : #333;
   &:hover {
@@ -33,6 +34,7 @@
 }
 
 .c-btn--primary {
+  @extend %btn;
   background-color : $primary;
   color            : $white;
   &:hover {
@@ -42,6 +44,7 @@
 }
 
 .c-btn--secondary {
+  @extend %btn;
   background-color : $secondary;
   color            : $white;
   &:hover {

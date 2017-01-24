@@ -14,7 +14,7 @@ $(document).ready(function () {
             this.slick.init();
             this.chosen.init();
             this.smoothScroll.init();
-            this.previewGrid.init();
+            this.expander.init();
         },
         nav: {
             button: $('.js-nav-btn'),
@@ -101,7 +101,7 @@ $(document).ready(function () {
                 }
             }
         },
-        previewGrid: {
+        expander: {
             init: function () {
                 Grid.init();
             }

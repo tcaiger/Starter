@@ -1,3 +1,14 @@
 /*------------------------------------*\
     #LAYOUT.LAYOUT
 \*------------------------------------*/
+.l-maxWidth {
+  max-width     : $maxWidth !important;
+  @media screen and (min-width : $screen-lg) {
+    padding-left  : 30px;
+    padding-right : 30px;
+  }
+  @media screen and (min-width : 1500px) {
+    padding-left  : 50px;
+    padding-right : 50px;
+  }
+}

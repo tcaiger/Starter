@@ -1,7 +1,7 @@
 
 
 
-var Grid = (function () {
+var Expander = (function () {
 
     var $selector = '.js-grid',
         $grid = $($selector),

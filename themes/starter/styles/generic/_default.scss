@@ -13,9 +13,9 @@ body {
   font-family : $bodyFont;
   font-size   : 15px;
   line-height : 1.5;
-  background  : #f9f9f9;
+  background  : $white;
   font-weight : 300;
-  color       : #333;
+  color       : $bodyColour;
   overflow    : scroll;
   overflow-x  : hidden;
 }

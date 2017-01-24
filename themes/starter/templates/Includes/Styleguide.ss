@@ -24,19 +24,19 @@
         <h1>Buttons</h1>
     </div>
     <p>
-        <button type="button" class="c-btn c-btn--lg c-btn--default">Default Button</button>
-        <button type="button" class="c-btn c-btn--lg c-btn--primary">Blue Button</button>
-        <button type="button" class="c-btn c-btn--lg c-btn--secondary">Red Button</button>
+        <button type="button" class="c-btn--default c-btn--lg">Default Button</button>
+        <button type="button" class="c-btn--primary c-btn--lg">Blue Button</button>
+        <button type="button" class="c-btn--secondary c-btn--lg">Red Button</button>
     </p>
     <p>
-        <button type="button" class="c-btn c-btn--default">Default Button</button>
-        <button type="button" class="c-btn c-btn--primary">Blue Button</button>
-        <button type="button" class="c-btn c-btn--secondary">Red Button</button>
+        <button type="button" class="c-btn--default">Default Button</button>
+        <button type="button" class="c-btn--primary">Blue Button</button>
+        <button type="button" class="c-btn--secondary">Red Button</button>
     </p>
     <p>
-        <button type="button" class="c-btn c-btn--sm c-btn--default">Default Button</button>
-        <button type="button" class="c-btn c-btn--sm c-btn--primary">Blue Button</button>
-        <button type="button" class="c-btn c-btn--sm c-btn--secondary">Red Button</button>
+        <button type="button" class="c-btn--default c-btn--sm">Default Button</button>
+        <button type="button" class="c-btn--primary c-btn--sm">Blue Button</button>
+        <button type="button" class="c-btn--secondary c-btn--sm">Red Button</button>
     </p>
 
     <div class="page-header">
