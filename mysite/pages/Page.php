@@ -19,13 +19,16 @@ class Page_Controller extends ContentController {
 
     public function init() {
         parent::init();
+
+        Requirements::clear(THIRDPARTY_DIR . "/jquery/jquery.js");
+        Requirements::clear("forum/javascript/Forum.js");
+        Requirements::clear("forum/javascript/jquery.MultiFile.js");
+
         Requirements::css("{$this->ThemeDir()}/css/main.css");
-
-
-        // Combine and include js (stop minifying)
         Requirements::combine_files(
             'main.js',
             [
+                THIRDPARTY_DIR . "/jquery/jquery.js",
                 "{$this->ThemeDir()}/js/vendor/jquery.min.js",
                 "{$this->ThemeDir()}/js/vendor/bootstrap.min.js",
                 "{$this->ThemeDir()}/js/vendor/matchHeight.min.js",
@@ -35,6 +38,8 @@ class Page_Controller extends ContentController {
                 "{$this->ThemeDir()}/js/vendor/chosen.jquery.min.js",
                 "{$this->ThemeDir()}/js/vendor/modernizer.js",
                 "{$this->ThemeDir()}/js/vendor/focuspoint.min.js",
+                "forum/javascript/Forum.js",
+                "forum/javascript/jquery.MultiFile.js",
                 "{$this->ThemeDir()}/js/expander.js",
                 "{$this->ThemeDir()}/js/scripts.js"
             ]);

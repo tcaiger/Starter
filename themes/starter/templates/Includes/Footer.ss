@@ -1,4 +1,4 @@
-<footer class="c-footer container u-mt--md">
+<footer class="c-footer container">
     <section class="c-footer__top clearfix">
         <ul class="c-footer__socials list-inline">
             <li>
@@ -14,7 +14,7 @@
         </ul>
         <ul class="c-footer__contact list-unstyled">
             <li><a href="#">Sarah: 021 102 4851</a></li>
-            <li><a href="#">enquiries@climatehouse.co.nz</a></li>
+            <li><a href="#">enquiries@swordfox.co.nz</a></li>
         </ul>
         <a href="#page-top" class="c-footer__btt js-scroll">
             <span>Back To Top</span>

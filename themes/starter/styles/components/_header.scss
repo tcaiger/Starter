@@ -2,12 +2,12 @@
     #COMPONENTS.HEADER
 \*------------------------------------*/
 
-$top-padding : 20px;
+$top-padding : 10px;
 
 .c-header {
   position : relative;
-  @include responsive('padding-top', 0.4* $top-padding, 0.5* $top-padding, 0.8* $top-padding, $top-padding);
-  @include responsive('padding-bottom', 30px);
+  @include responsive('padding-top', 0.6* $top-padding, $top-padding);
+  @include responsive('padding-bottom', $top-padding * 2);
   &.active {
     .c-nav {
       display : block;
@@ -26,7 +26,7 @@ $top-padding : 20px;
   float   : left;
   img {
     max-height : 100%;
-    @include responsive('width', 140px, 180px, 200px);
+    @include responsive('width', 120px, 140px, 150px);
   }
 }
 

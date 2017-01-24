@@ -1,7 +1,7 @@
 /*------------------------------------*\
     #LAYOUT.LAYOUT
 \*------------------------------------*/
-.l-maxWidth {
+.l-container--lg {
   max-width     : $maxWidth !important;
   @media screen and (min-width : $screen-lg) {
     padding-left  : 30px;

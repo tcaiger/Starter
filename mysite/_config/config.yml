@@ -3,6 +3,7 @@ Name: mysite
 After:
   - 'framework/*'
   - 'cms/*'
+  - 'forum/*'
 ---
 # YAML configuration for SilverStripe
 # See http://doc.silverstripe.org/framework/en/topics/configuration

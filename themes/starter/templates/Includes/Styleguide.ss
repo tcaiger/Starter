@@ -153,6 +153,8 @@
 
     <div class="page-header">
         <h1>Alerts</h1>
+    </div>
+    <div class="container">
         <p class="message good">You successfully read this important <strong>alert</strong> message.</p>
         <p class="message bad">You successfully read this important alert message.</p>
         <p class="message warning">You successfully read this important alert message.</p>

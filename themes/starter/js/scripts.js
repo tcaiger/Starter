@@ -54,7 +54,7 @@ $(document).ready(function () {
             init: function () {
                 if (this.checkbox.length) {
                     this.checkbox.iCheck({
-                        checkboxClass: 'icheckbox_minimal-blue',
+                        checkboxClass: 'icheckbox_minimal',
                     });
                 }
             },
@@ -73,7 +73,7 @@ $(document).ready(function () {
             },
             slider: $('.js-slick'),
             init: function () {
-                if(this.slider){
+                if(this.slider.length){
                     this.slider.slick(this.settings);
                     $('.t-focuspoint').focusPoint();
                     this.events();
@@ -96,8 +96,8 @@ $(document).ready(function () {
         },
         chosen: {
             init: function () {
-                if ($('select.dropdown').length && !/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-                    $('select.dropdown').chosen({width: '100%'});
+                if ($('select').length && !/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    $('select').chosen({width: '100%'});
                 }
             }
         },

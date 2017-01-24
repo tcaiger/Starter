@@ -2159,7 +2159,7 @@ tbody.collapse.in {
   padding: 0;
   width: 18px;
   height: 18px;
-  background: url(images/minimal.png) no-repeat;
+  background: url(../images/minimal.png) no-repeat;
   border: none;
   cursor: pointer; }
 
@@ -2770,13 +2770,13 @@ textarea.textarea {
 .field.dropdown {
   margin-bottom: 15px; }
 
-.CompositeField {
+.contact-form .CompositeField {
   font-size: 0; }
   @media screen and (min-width: 768px) {
-    .CompositeField .field {
+    .contact-form .CompositeField .field {
       display: inline-block;
       width: 48%; }
-      .CompositeField .field:first-child {
+      .contact-form .CompositeField .field:first-child {
         margin-right: 4%; } }
 
 Form .chosen-container-single .chosen-single {
@@ -2830,14 +2830,14 @@ Form .chosen-container-single .chosen-single {
 
 /*------------------------------------*    #LAYOUT.LAYOUT
 \*------------------------------------*/
-.l-maxWidth {
+.l-container--lg {
   max-width: 1650px !important; }
   @media screen and (min-width: 1200px) {
-    .l-maxWidth {
+    .l-container--lg {
       padding-left: 30px;
       padding-right: 30px; } }
   @media screen and (min-width: 1500px) {
-    .l-maxWidth {
+    .l-container--lg {
       padding-left: 50px;
       padding-right: 50px; } }
 
@@ -2845,17 +2845,11 @@ Form .chosen-container-single .chosen-single {
 \*------------------------------------*/
 .c-header {
   position: relative;
-  padding-top: 8px;
-  padding-bottom: 30px; }
+  padding-top: 6px;
+  padding-bottom: 20px; }
   @media screen and (min-width: 480px) {
     .c-header {
       padding-top: 10px; } }
-  @media screen and (min-width: 768px) {
-    .c-header {
-      padding-top: 16px; } }
-  @media screen and (min-width: 992px) {
-    .c-header {
-      padding-top: 20px; } }
   .c-header.active .c-nav {
     display: block; }
   .c-header.active .icon-menu {
@@ -2868,13 +2862,13 @@ Form .chosen-container-single .chosen-single {
   float: left; }
   .c-header__brand img {
     max-height: 100%;
-    width: 140px; }
+    width: 120px; }
     @media screen and (min-width: 480px) {
       .c-header__brand img {
-        width: 180px; } }
+        width: 140px; } }
     @media screen and (min-width: 768px) {
       .c-header__brand img {
-        width: 200px; } }
+        width: 150px; } }
 
 .c-header__menu {
   float: right;
@@ -3057,8 +3051,10 @@ Form .chosen-container-single .chosen-single {
 
 /*------------------------------------*    #COMPONENTS.FOOTER
 \*------------------------------------*/
-.c-footer i, .c-footer p, .c-footer a {
-  color: #666; }
+.c-footer {
+  margin-top: 3%; }
+  .c-footer i, .c-footer p, .c-footer a {
+    color: #666; }
 
 .c-footer__top {
   padding: 20px 0; }
@@ -3145,7 +3141,8 @@ Form .chosen-container-single .chosen-single {
 
 /*------------------------------------*    #COMPONENTS.BUTTONS
 \*------------------------------------*/
-.c-btn--default, .c-btn--primary, .c-btn--secondary, #MemberLoginForm_LoginForm input[type=submit] {
+.c-btn--default, .c-btn--primary, .c-btn--secondary, #MemberLoginForm_LoginForm input[type=submit], .ForumHolder input[type=submit], .Forum input[type=submit], #TopicTree input[type=submit],
+#UserProfile input[type=submit] {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 0;
@@ -3568,6 +3565,49 @@ input[type="button"].btn-block {
 
 #MemberLoginForm_LoginForm {
   max-width: 500px; }
+
+/*------------------------------------*    #TRUMPS.FORUM
+\*------------------------------------*/
+body .forum-header,
+body .forum-footer,
+body .forum-topics,
+body .forum-features,
+body .forum-footer,
+body #UserProfile,
+body #TopicTree,
+body .forum-post {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.forum-header {
+  margin-bottom: 4%; }
+
+.forum-search-bar .text {
+  width: 235px;
+  float: left; }
+
+.forum-search-bar .submit {
+  text-indent: 500px;
+  width: 60px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  float: left; }
+
+#TopicTree Form,
+#UserProfile Form {
+  max-width: 600px; }
+
+#TopicTree .file,
+#UserProfile .file {
+  margin-bottom: 2em; }
+
+#TopicTree label,
+#UserProfile label {
+  font-size: 15px;
+  display: block; }
 
 /*------------------------------------*    #TRUMPS.UTILITIES
 \*------------------------------------*/
