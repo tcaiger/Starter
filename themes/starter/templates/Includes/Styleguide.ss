@@ -45,13 +45,9 @@
 
     <div class="row">
         <div class="col-md-8">
-
             $ContactForm
-
-
         </div>
     </div>
-
 
     <div class="page-header">
         <h1>Paragraphs</h1>
@@ -82,7 +78,6 @@
             </p>
         </div>
     </div>
-
 
     <div class="page-header">
         <h1>Tables</h1>
@@ -183,7 +178,5 @@
         <h1>Preview Grid</h1>
     </div>
     <% include PreviewGrid %>
-
-    <div style="width: 100%; height: 60px;"></div>
 
 </main> <!-- /container -->

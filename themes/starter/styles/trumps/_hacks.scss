@@ -1,0 +1,8 @@
+
+
+#MemberLoginForm_LoginForm{
+  max-width: 500px;
+  input[type=submit]{
+    @extend %btn;
+  }
+}

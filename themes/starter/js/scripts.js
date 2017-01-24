@@ -103,7 +103,7 @@ $(document).ready(function () {
         },
         expander: {
             init: function () {
-                Grid.init();
+                Expander.init();
             }
         }
     }

@@ -3145,7 +3145,7 @@ Form .chosen-container-single .chosen-single {
 
 /*------------------------------------*    #COMPONENTS.BUTTONS
 \*------------------------------------*/
-.c-btn--default, .c-btn--primary, .c-btn--secondary {
+.c-btn--default, .c-btn--primary, .c-btn--secondary, #MemberLoginForm_LoginForm input[type=submit] {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 0;
@@ -3565,6 +3565,9 @@ input[type="button"].btn-block {
   min-height: 100%;
   max-height: none;
   max-width: none; }
+
+#MemberLoginForm_LoginForm {
+  max-width: 500px; }
 
 /*------------------------------------*    #TRUMPS.UTILITIES
 \*------------------------------------*/

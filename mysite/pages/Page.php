@@ -35,7 +35,7 @@ class Page_Controller extends ContentController {
                 "{$this->ThemeDir()}/js/vendor/chosen.jquery.min.js",
                 "{$this->ThemeDir()}/js/vendor/modernizer.js",
                 "{$this->ThemeDir()}/js/vendor/focuspoint.min.js",
-                "{$this->ThemeDir()}/js/grid.js",
+                "{$this->ThemeDir()}/js/expander.js",
                 "{$this->ThemeDir()}/js/scripts.js"
             ]);
 
