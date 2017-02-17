@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #GENERIC.DEFAULT
+\*------------------------------------*/
+
+html {
+  box-sizing             : border-box;
+  -webkit-font-smoothing : antialiased;
+  height                 : 100%;
+
+}
+
+body {
+  font-family : $bodyFont;
+  font-size   : 15px;
+  line-height : 1.5;
+  background  : $white;
+  font-weight : 300;
+  color       : $bodyColour;
+  overflow    : scroll;
+  overflow-x  : hidden;
+}
+
+
+
+
+
+

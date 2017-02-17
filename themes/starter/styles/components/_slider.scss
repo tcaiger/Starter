@@ -1,0 +1,93 @@
+/*------------------------------------*\
+    #COMPONENTS.SLIDER
+\*------------------------------------*/
+.c-slider__items {
+  position : relative;
+  height : 500px;
+  height :75vh;
+}
+
+.c-slide {
+  height : 500px;
+  height :75vh;
+  &:before {
+    content    : '';
+    position   : absolute;
+    top        : 0;
+    bottom     : 0;
+    left       : 0;
+    right      : 0;
+    background : linear-gradient(to top right, rgba(20, 20, 20, 0.99), rgba(20, 20, 20, 0), rgba(20, 20, 20, 0));
+    z-index    : 10;
+  }
+}
+
+// Content
+.c-slide__cta {
+  position : absolute;
+  top      : 65%;
+  left     : 10%;
+  z-index  : 20;
+  h2 {
+    position       : relative;
+    color          : $white;
+    text-transform : uppercase;
+    top            : -20px;
+    opacity        : 0;
+    transition     : top 0.8s ease-in-out, opacity 0.8s;
+    transition-timing-function: cubic-bezier(0,0,0.58,1);
+    &.active {
+      top     : 0;
+      opacity : 1;
+    }
+  }
+  .c-btn {
+    opacity    : 0;
+    transition : opacity 0.8s;
+    transition-timing-function: cubic-bezier(0,0,0.58,1);
+    &.active {
+      opacity : 1;
+    }
+  }
+}
+
+// Navigation Buttons
+.c-slider__next,
+.c-slider__prev {
+  position   : absolute;
+  display    : block;
+  top        : 50%;
+  transform  : translate(0, -50%);
+  width      : 40px;
+  height     : 60px;
+  background : #333;
+  z-index    : 10;
+  transition : background 0.3s ease;
+  &:before {
+    transform   : translate(0, -50%);
+    position    : absolute;
+    top         : 50%;
+    font-family : icomoon !important;
+    color       : $white;
+  }
+  &:hover {
+    cursor     : pointer;
+    background : #666;
+  }
+}
+
+.c-slider__prev {
+  left : 0;
+  &:before {
+    left    : 25%;
+    content : "\e901";
+  }
+}
+
+.c-slider__next {
+  right : 0;
+  &:before {
+    right   : 25%;
+    content : "\e902";
+  }
+}

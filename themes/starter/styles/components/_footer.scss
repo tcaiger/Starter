@@ -1,0 +1,99 @@
+/*------------------------------------*\
+    #COMPONENTS.FOOTER
+\*------------------------------------*/
+.c-footer {
+  margin-top: 3%;
+  & i, p, a {
+    color : #666;
+  }
+}
+
+.c-footer__top {
+  padding : 20px 0;
+}
+
+.c-footer__bottom {
+  padding : 20px 0;
+}
+
+.c-footer__contact {
+  display : inline-block;
+}
+
+.c-footer__socials {
+  display : inline-block;
+  margin-right :10px;
+  i {
+    font-size  : 32px;
+    transition : color 0.3s ease;
+    &:hover {
+      color : $primary;
+    }
+  }
+}
+
+.c-footer__btt {
+  float       : right;
+  transition  : color 0.3s ease;
+  line-height : 40px;
+  margin-right :3px;
+  i {
+    position    : relative;
+    top         : 4px;
+    font-size   : 20px;
+    margin-left : 5px;
+  }
+  &:hover {
+    color : $primary;
+  }
+}
+
+.c-footer__brand {
+  display : inline-block;
+  float   : left;
+  img {
+    max-height : 100%;
+    @include responsive('width', 80px, 90px, 100px);
+  }
+}
+
+.c-footer__swordfox {
+  display        : inline-block;
+  margin-top     : 5px;
+  float          : right;
+  line-height    : 40px;
+  text-transform : uppercase;
+  transition     : color 0.3s ease;
+  @media screen and (max-width : 600px) {
+    width : 290px;
+  }
+  .text {
+    float       : left;
+    font-size   : 13px;
+    margin-left : 5px;
+    @media screen and (max-width : 600px) {
+      line-height : 18px;
+      margin-left : 0;
+      width       : 250px;
+    }
+  }
+  &:hover {
+    color : $primary;
+  }
+  i {
+    position       : relative;
+    float          : left;
+    top            : -5px;
+    font-size      : 40px;
+    vertical-align : middle;
+    @media screen and (max-width : 600px) {
+      width : 40px;
+    }
+  }
+}
+
+.c-footer__hr {
+  width         : 100%;
+  height        : 1px;
+  border-bottom : 1px solid #aaa;
+}

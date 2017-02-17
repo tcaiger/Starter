@@ -1,0 +1,109 @@
+/*------------------------------------*\
+    #ELEMENTS.FORMS
+\*------------------------------------*/
+
+input.text,
+textarea.textarea {
+  width         : 100%;
+  font-size     : 15px;
+  padding-left  : 10px;
+  border-radius : 0;
+  height        : 50px;
+  border        : 1px solid #ccc;
+  box-shadow    : none;
+  margin-bottom : 15px;
+
+  &:focus {
+    box-shadow : none;
+    outline    : none
+  }
+}
+
+.textarea label, .dropdown label, .text label {
+  display : none;
+}
+
+textarea.textarea {
+  height      : auto;
+  padding-top : 8px;
+}
+
+.field.dropdown {
+  margin-bottom : 15px;
+}
+
+.contact-form .CompositeField {
+  // set to zero to remove white space
+  font-size : 0;
+  .field {
+    @media screen and (min-width : $screen-sm) {
+      display : inline-block;
+      width   : 48%;
+      &:first-child {
+        margin-right : 4%;
+      }
+    }
+
+  }
+}
+
+Form .chosen-container-single .chosen-single {
+  font-size     : 15px;
+  padding-left  : 10px;
+  color         : #999;
+  border-radius : 0;
+  height        : 50px;
+  border        : 1px solid #ccc;
+  background    : $white;
+  box-shadow    : none;
+  padding-top   : 11px;
+
+  &:focus {
+    border     : 1px solid #333;
+    box-shadow : none;
+  }
+}
+
+.chosen-single {
+  &:before {
+    position    : absolute;
+    font-family : 'icomoon' !important;
+    content     : "\e900";
+    font-size   : 12px;
+    right       : 5px;
+    width       : 20px;
+    height      : 20px;
+  }
+  div b {
+    display : none !important;
+  }
+}
+
+
+/*------------------------------------*\
+    #COMPONENTS.MESSAGE
+\*------------------------------------*/
+.message{
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  padding: 7px 15px;
+  margin: -8px 0 15px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  &.good{
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+  }
+  &.warning{
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+  }
+  &.bad, &.required, &.validation{
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+  }
+}

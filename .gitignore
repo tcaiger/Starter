@@ -1,0 +1,31 @@
+# core silverstripe files
+cms/
+framework/
+siteconfig/
+reports/
+/silverstripe-cache/
+_ss_environment.php
+/tools/phing-metadata
+assets/
+.idea/
+
+# composer vendor folder
+/vendor/
+
+#config
+mysite/_config.php
+
+
+# node modules
+themes/starter/node_modules/
+themes/starter/images/temp/
+
+# modules
+betterbuttons/
+googlesitemaps/
+gridfieldextensions/
+nocaptcha/
+spamprotection/
+gridfield-bulk-editing-tools/
+focuspoint/
+forum/

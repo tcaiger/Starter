@@ -1,0 +1,189 @@
+/*------------------------------------*\
+    #COMPONENTS.EXPANDER
+\*------------------------------------*/
+
+.c-expander {
+  position   : absolute;
+  background : #ddd;
+  top        : auto;
+  left       : 0;
+  width      : 100%;
+  margin-top : 10px;
+  text-align : left;
+  height     : 0;
+  overflow   : hidden;
+}
+
+.c-expander__prev,
+.c-expander__next{
+  position: absolute;
+  display: block;
+  top :50%;
+  height: 100px;
+  width : 40px;
+  background: #aaa;
+  color: #333;
+  transform: translateY(-50%);
+  transition: background 0.3s ease;
+  &:hover{
+    background: #666;
+    cursor: pointer;
+  }
+}
+
+.c-expander__prev {
+  left: 0;
+}
+
+.c-expander__next{
+  right: 0;
+}
+
+
+.c-expander__inner {
+  padding : 50px 30px;
+  height  : 100%;
+}
+
+.c-expander__close {
+  position : absolute;
+  width    : 40px;
+  height   : 40px;
+  top      : 20px;
+  right    : 20px;
+  cursor   : pointer;
+}
+
+.c-expander__close::before,
+.c-expander__close::after {
+  content    : '';
+  position   : absolute;
+  width      : 100%;
+  top        : 50%;
+  height     : 1px;
+  background : #888;
+  transform  : rotate(45deg);
+}
+
+.c-expander__close::after {
+  transform : rotate(-45deg);
+}
+
+.c-expander__close:hover::before,
+.c-expander__close:hover::after {
+  background : #333;
+}
+
+.c-expander__fullimg,
+.c-expander__details {
+  width    : 50%;
+  float    : left;
+  height   : 100%;
+  overflow : hidden;
+  position : relative;
+}
+
+.c-expander__details {
+  padding : 0 40px 0 20px;
+}
+
+.c-expander__fullimg {
+  text-align : center;
+}
+
+.c-expander__fullimg img {
+  display    : inline-block;
+  max-height : 100%;
+  max-width  : 100%;
+}
+
+.c-expander__details h3 {
+  font-weight   : 300;
+  font-size     : 52px;
+  padding       : 40px 0 10px;
+  margin-bottom : 10px;
+}
+
+.c-expander__details p {
+  font-weight : 400;
+  font-size   : 16px;
+  line-height : 22px;
+  color       : #999;
+}
+
+.c-expander__details a {
+  font-weight    : 700;
+  font-size      : 16px;
+  color          : #333;
+  text-transform : uppercase;
+  letter-spacing : 2px;
+  padding        : 10px 20px;
+  border         : 3px solid #333;
+  display        : inline-block;
+  margin         : 30px 0 0;
+  outline        : none;
+}
+
+.c-expander__details a::before {
+  content      : '\2192';
+  display      : inline-block;
+  margin-right : 10px;
+}
+
+.c-expander__details a:hover {
+  border-color : #999;
+  color        : #999;
+}
+
+.c-expander__loading {
+  width         : 20px;
+  height        : 20px;
+  border-radius : 50%;
+  background    : #ddd;
+  box-shadow    : 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position      : absolute;
+  top           : 50%;
+  left          : 50%;
+  margin        : -25px 0 0 -25px;
+  animation     : loader 0.5s infinite ease-in-out both;
+}
+
+@keyframes loader {
+  0% {
+    background : #ddd;
+  }
+  33% {
+    background : #ccc;
+    box-shadow : 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background : #ccc;
+    box-shadow : 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+
+@media screen and (max-width : 830px) {
+
+  .c-expander__expander h3 {
+    font-size : 32px;
+  }
+  .c-expander__expander p {
+    font-size : 13px;
+  }
+  .c-expander__expander a {
+    font-size : 12px;
+  }
+
+}
+
+@media screen and (max-width : 650px) {
+
+  .c-expander__fullimg {
+    display : none;
+  }
+  .c-expander__details {
+    float : none;
+    width : 100%;
+  }
+
+}

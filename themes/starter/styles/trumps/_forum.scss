@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    #TRUMPS.FORUM
+\*------------------------------------*/
+
+body{
+  .forum-header,
+  .forum-footer,
+  .forum-topics,
+  .forum-features,
+  .forum-footer,
+  #UserProfile,
+  #TopicTree,
+  .forum-post{
+    max-width: $container-lg;
+    padding-left  : 15px;
+    padding-right : 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.ForumHolder, .Forum{
+  input[type=submit]{
+    @extend %btn;
+  }
+}
+
+.forum-header{
+  margin-bottom :4%;
+}
+
+.forum-search-bar{
+  .text{
+    width : 235px;
+    float: left;
+  }
+  .submit{
+    text-indent: 500px;
+    width : 60px!important;
+    padding-left : 0!important;
+    padding-right : 0!important;
+    float: left;
+  }
+}
+
+// #user profile
+#TopicTree,
+#UserProfile{
+  Form{
+    max-width: 600px;
+  }
+  .file{
+    margin-bottom :2em;
+  }
+  label{
+    font-size: 15px;
+    display: block;
+  }
+  input[type=submit]{
+    @extend %btn;
+  }
+}
