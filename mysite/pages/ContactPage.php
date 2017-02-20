@@ -4,9 +4,7 @@ class ContactPage extends Page {
 
     private static $allowed_children = 'none';
 
-    private static $db = array(
-
-    );
+    private static $db = [];
 
 
 

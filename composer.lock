@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d52a42554582f360787e7d981e049956",
-    "content-hash": "deaf6f32335329bf1ecead3735fcf25e",
+    "hash": "8444828a554c6882ef2b9f0b3862cbbd",
+    "content-hash": "a03e0cf1b3c82e1b6230b7fd0551560c",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -394,46 +394,6 @@
                 "silverstripe"
             ],
             "time": "2016-08-15 06:27:31"
-        },
-        {
-            "name": "silverstripe/forum",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-forum.git",
-                "reference": "1b2fc7bc65b3bdd40264d4aa1d2ab1b09f968b03"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-forum/zipball/1b2fc7bc65b3bdd40264d4aa1d2ab1b09f968b03",
-                "reference": "1b2fc7bc65b3bdd40264d4aa1d2ab1b09f968b03",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/cms": "~3.1",
-                "silverstripe/framework": "~3.1"
-            },
-            "type": "silverstripe-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Will Rossiter",
-                    "email": "will@fullscreen.io"
-                },
-                {
-                    "name": "Sean Harvey",
-                    "email": "sean@silverstripe.com"
-                }
-            ],
-            "description": "Forum module for SilverStripe.",
-            "keywords": [
-                "forum",
-                "silverstripe"
-            ],
-            "time": "2016-12-11 21:08:08"
         },
         {
             "name": "silverstripe/framework",
@@ -1152,7 +1112,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "jonom/focuspoint": 20,
-        "silverstripe/forum": 20,
         "phpunit/phpunit": 0
     },
     "prefer-stable": true,
