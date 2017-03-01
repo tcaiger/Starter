@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container-fluid l-container">
     <div class="page-header">
         <h1>Overlays</h1>
     </div>

@@ -1,4 +1,4 @@
-<header class="c-header container clearfix js-header">
+<header class="c-header container-fluid l-container clearfix js-header">
     <a class="c-header__brand" href="$AbsoluteBaseURL">
         <img src="$ThemeDir/images/logo.png" alt="logo">
     </a>

@@ -1,14 +1,10 @@
 /*------------------------------------*\
     #LAYOUT.LAYOUT
 \*------------------------------------*/
-.l-container--lg {
-  max-width     : $maxWidth !important;
-  @media screen and (min-width : $screen-lg) {
-    padding-left  : 30px;
-    padding-right : 30px;
-  }
-  @media screen and (min-width : 1500px) {
-    padding-left  : 50px;
-    padding-right : 50px;
+.l-container {
+  max-width     : $customContainer;
+  margin :0 auto;
+  @media screen and (min-width: $screen-lg){
+    padding :0 30px;
   }
 }

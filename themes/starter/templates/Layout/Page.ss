@@ -1,6 +1,6 @@
 <% include Slider %>
 
-<div class="container u-mt--sm">
+<div class="container l-container u-mt--sm">
     $Form
 </div>
 

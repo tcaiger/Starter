@@ -1,4 +1,4 @@
-<main class="container">
+<main class="container-fluid l-container">
 
     <div class="page-header">
         <h1>Headings</h1>

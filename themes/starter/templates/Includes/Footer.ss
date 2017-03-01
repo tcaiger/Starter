@@ -1,4 +1,4 @@
-<footer class="c-footer container">
+<footer class="c-footer container-fluid l-container">
     <section class="c-footer__top clearfix">
         <ul class="c-footer__socials list-inline">
             <li>
