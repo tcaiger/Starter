@@ -3143,8 +3143,7 @@ Form .chosen-container-single .chosen-single {
 
 /*------------------------------------*    #COMPONENTS.BUTTONS
 \*------------------------------------*/
-.c-btn--default, .c-btn--primary, .c-btn--secondary, #MemberLoginForm_LoginForm input[type=submit], .ForumHolder input[type=submit], .Forum input[type=submit], #TopicTree input[type=submit],
-#UserProfile input[type=submit] {
+.c-btn--default, .c-btn--primary, .c-btn--secondary, #MemberLoginForm_LoginForm input[type=submit] {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 0;
@@ -3402,6 +3401,32 @@ input[type="button"].btn-block {
 .c-icon__holder {
   display: inline-block; }
 
+.c-calendar--responsive {
+  overflow: scroll; }
+
+.c-calendar {
+  min-width: 900px;
+  font-size: 0; }
+
+.c-day {
+  display: inline-block;
+  vertical-align: top;
+  width: 14.2857142857%;
+  padding: 5px; }
+  .c-day .inner {
+    padding: 15px;
+    background: lightgrey;
+    height: 120px;
+    -webkit-transition: background 0.5s ease;
+            transition: background 0.5s ease; }
+    .c-day .inner:hover {
+      background: lightblue;
+      cursor: pointer; }
+  .c-day .day {
+    font-size: 10px; }
+  .c-day .name {
+    font-size: 10px; }
+
 /*------------------------------------*    #COMPONENTS.PREVIEW
 \*------------------------------------*/
 .c-preview__container {
@@ -3639,49 +3664,6 @@ input[type="button"].btn-block {
 
 #MemberLoginForm_LoginForm {
   max-width: 500px; }
-
-/*------------------------------------*    #TRUMPS.FORUM
-\*------------------------------------*/
-body .forum-header,
-body .forum-footer,
-body .forum-topics,
-body .forum-features,
-body .forum-footer,
-body #UserProfile,
-body #TopicTree,
-body .forum-post {
-  max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.forum-header {
-  margin-bottom: 4%; }
-
-.forum-search-bar .text {
-  width: 235px;
-  float: left; }
-
-.forum-search-bar .submit {
-  text-indent: 500px;
-  width: 60px !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  float: left; }
-
-#TopicTree Form,
-#UserProfile Form {
-  max-width: 600px; }
-
-#TopicTree .file,
-#UserProfile .file {
-  margin-bottom: 2em; }
-
-#TopicTree label,
-#UserProfile label {
-  font-size: 15px;
-  display: block; }
 
 /*------------------------------------*    #TRUMPS.UTILITIES
 \*------------------------------------*/
