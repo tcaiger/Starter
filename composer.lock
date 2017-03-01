@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
-            "version": "v2.1.8",
+            "version": "v2.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "0e6f2e6efbe8d0e9b397d51a5cd402886a0f2e96"
+                "reference": "3aad957a69c73b43d5e6a1cd7e86633b4a2f7e23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/0e6f2e6efbe8d0e9b397d51a5cd402886a0f2e96",
-                "reference": "0e6f2e6efbe8d0e9b397d51a5cd402886a0f2e96",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/3aad957a69c73b43d5e6a1cd7e86633b4a2f7e23",
+                "reference": "3aad957a69c73b43d5e6a1cd7e86633b4a2f7e23",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2016-11-16 08:47:05"
+            "time": "2017-01-25 12:41:08"
         },
         {
             "name": "composer/installers",
@@ -197,29 +197,29 @@
         },
         {
             "name": "sendgrid/php-http-client",
-            "version": "3.5.1",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sendgrid/php-http-client.git",
-                "reference": "3c4c35eafd364ebcfdbb0a37f655417beed8ee0f"
+                "reference": "01c3fc4b94df008cfe03ffb467d4c6dbe6dcfb2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sendgrid/php-http-client/zipball/3c4c35eafd364ebcfdbb0a37f655417beed8ee0f",
-                "reference": "3c4c35eafd364ebcfdbb0a37f655417beed8ee0f",
+                "url": "https://api.github.com/repos/sendgrid/php-http-client/zipball/01c3fc4b94df008cfe03ffb467d4c6dbe6dcfb2c",
+                "reference": "01c3fc4b94df008cfe03ffb467d4c6dbe6dcfb2c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "php": ">=5.3"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.4",
-                "squizlabs/php_codesniffer": "~2.0"
+                "squizlabs/php_codesniffer": "2.*"
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "SendGrid\\": "lib/"
+                "psr-0": {
+                    "SendGrid": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -245,25 +245,25 @@
                 "rest",
                 "sendgrid"
             ],
-            "time": "2016-11-17 22:45:31"
+            "time": "2016-06-11 00:47:24"
         },
         {
             "name": "sendgrid/sendgrid",
-            "version": "5.1.2",
+            "version": "5.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sendgrid/sendgrid-php.git",
-                "reference": "46f85e69ec6a36d4674e7131e442fbecdaa5d183"
+                "reference": "1050d195525ff529036e7804f2c303261d65dca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/46f85e69ec6a36d4674e7131e442fbecdaa5d183",
-                "reference": "46f85e69ec6a36d4674e7131e442fbecdaa5d183",
+                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/1050d195525ff529036e7804f2c303261d65dca3",
+                "reference": "1050d195525ff529036e7804f2c303261d65dca3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6",
-                "sendgrid/php-http-client": "~3.5"
+                "php": ">=5.3",
+                "sendgrid/php-http-client": "3.1.0"
             },
             "replace": {
                 "sendgrid/sendgrid-php": "*"
@@ -291,7 +291,7 @@
                 "send",
                 "sendgrid"
             ],
-            "time": "2016-11-17 23:05:01"
+            "time": "2016-07-08 02:55:23"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
@@ -571,16 +571,16 @@
         },
         {
             "name": "silverstripe/spamprotection",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
-                "reference": "df6e182dd283ac18a57955c3a4e4347413462174"
+                "reference": "56ec1f42c625bde31f7e13d56cd9cae99a2727f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/df6e182dd283ac18a57955c3a4e4347413462174",
-                "reference": "df6e182dd283ac18a57955c3a4e4347413462174",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/56ec1f42c625bde31f7e13d56cd9cae99a2727f3",
+                "reference": "56ec1f42c625bde31f7e13d56cd9cae99a2727f3",
                 "shasum": ""
             },
             "require": {
@@ -609,7 +609,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2016-11-16 23:39:49"
+            "time": "2017-02-08 22:28:52"
         },
         {
             "name": "unclecheese/betterbuttons",
@@ -844,25 +844,30 @@
         },
         {
             "name": "phpunit/php-timer",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "38e9124049cf1a164f1e4537caf19c99bf1eb260"
+                "reference": "3dcf38ca72b158baf0bc245e9184d3fdffa9c46f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/38e9124049cf1a164f1e4537caf19c99bf1eb260",
-                "reference": "38e9124049cf1a164f1e4537caf19c99bf1eb260",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/3dcf38ca72b158baf0bc245e9184d3fdffa9c46f",
+                "reference": "3dcf38ca72b158baf0bc245e9184d3fdffa9c46f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4|~5"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -884,7 +889,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2016-05-12 18:03:57"
+            "time": "2017-02-26 11:10:40"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -1060,16 +1065,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.16",
+            "version": "v2.8.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "dbe61fed9cd4a44c5b1d14e5e7b1a8640cfb2bf2"
+                "reference": "322a8c2dfbca15ad6b1b27e182899f98ec0e0153"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/dbe61fed9cd4a44c5b1d14e5e7b1a8640cfb2bf2",
-                "reference": "dbe61fed9cd4a44c5b1d14e5e7b1a8640cfb2bf2",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/322a8c2dfbca15ad6b1b27e182899f98ec0e0153",
+                "reference": "322a8c2dfbca15ad6b1b27e182899f98ec0e0153",
                 "shasum": ""
             },
             "require": {
@@ -1105,7 +1110,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-03 13:49:52"
+            "time": "2017-01-21 16:40:50"
         }
     ],
     "aliases": [],

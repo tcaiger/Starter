@@ -3397,6 +3397,32 @@ input[type="button"].btn-block {
 .c-icon__holder {
   display: inline-block; }
 
+.c-calendar--responsive {
+  overflow: scroll; }
+
+.c-calendar {
+  min-width: 900px;
+  font-size: 0; }
+
+.c-day {
+  display: inline-block;
+  vertical-align: top;
+  width: 14.2857142857%;
+  padding: 5px; }
+  .c-day .inner {
+    padding: 15px;
+    background: lightgrey;
+    height: 120px;
+    -webkit-transition: background 0.5s ease;
+            transition: background 0.5s ease; }
+    .c-day .inner:hover {
+      background: lightblue;
+      cursor: pointer; }
+  .c-day .day {
+    font-size: 10px; }
+  .c-day .name {
+    font-size: 10px; }
+
 /*------------------------------------*    #COMPONENTS.PREVIEW
 \*------------------------------------*/
 .c-preview__container {
