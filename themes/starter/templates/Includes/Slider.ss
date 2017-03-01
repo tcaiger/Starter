@@ -1,4 +1,4 @@
-<section class="c-slider container">
+<section class="c-slider l-container--lg">
     <div class="c-slider__items js-slick">
         <div class="c-slide t-focuspoint"
              data-focus-x="0"

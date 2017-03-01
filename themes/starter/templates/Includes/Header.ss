@@ -1,5 +1,5 @@
 <header class="c-header container clearfix js-header">
-    <a class="c-header__brand" href="homepage.php">
+    <a class="c-header__brand" href="$AbsoluteBaseURL">
         <img src="$ThemeDir/images/logo.png" alt="logo">
     </a>
     <div class="c-header__menu js-nav-btn">

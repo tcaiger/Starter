@@ -10,3 +10,7 @@ After:
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
   theme: 'starter'
+
+StringField:
+  extensions:
+    - StringFormatter

@@ -1,6 +1,3 @@
-<% include Slider %>
-
-
 <main class="container">
 
     <div class="page-header">
@@ -175,10 +172,4 @@
             </ul>
         </div><!-- /.col-sm-4 -->
     </div>
-
-    <div class="page-header">
-        <h1>Preview Grid</h1>
-    </div>
-    <% include PreviewGrid %>
-
 </main> <!-- /container -->
