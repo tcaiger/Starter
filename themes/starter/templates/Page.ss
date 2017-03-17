@@ -3,11 +3,8 @@
 
 <head>
     <% base_tag %>
-    <% if $ClassName == 'HomePage' %>
-        <title>$SiteConfig.Title, Services etc, Queenstown, New Zealand</title>
-    <% else %>
-        <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
-    <% end_if %>
+    <title>$MetaTitle</title>
+    <meta name="description" content="$MetaDescription">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">

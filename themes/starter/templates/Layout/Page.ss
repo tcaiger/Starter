@@ -29,5 +29,5 @@
 </section>
 
 <%--<% include Styleguide %>--%>
-<%--<% include PreviewGrid %>--%>
+<% include PreviewGrid %>
 <%--<% include Overlays %>--%>

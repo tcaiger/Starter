@@ -102,6 +102,7 @@ var Expander = (function () {
     function showPreview($item) {
         var preview = $.data(this, 'preview'),
             position = $item.data('offsetTop');
+        console.log($.data(this, 'preview'));
 
         scrollExtra = 0;
 
