@@ -22,5 +22,5 @@ A project starter for SilverStripe projects.
 * Run composer install to get the php modules.
 
 ### References ###
-ITCSS: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture
-Add A Repo To Server: https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+* ITCSS: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture
+* Add A Repo To Server: https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
