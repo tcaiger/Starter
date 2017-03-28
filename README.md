@@ -17,7 +17,7 @@ A project starter for SilverStripe projects.
 * Copy and paste the whole starter project, except the .git folder, into your new project folder and make first commit to the new project.
 
 ### Set Up A New Project On The Server ###
-* Ssh into the server.
+* SSH into the server.
 * Clone the project to public_html on the server.
 * Run composer install to get the php modules.
 
