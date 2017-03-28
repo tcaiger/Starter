@@ -5,20 +5,6 @@
 
     <ul class="js-grid c-preview__container">
         <li class="c-preview">
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="$ThemeDir/images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                <img src="$ThemeDir/images/thumbs/1.jpg" alt="img01"/>
-                <div class="c-text-overlay">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut dicta hic.</p>
-                </div>
-            </a>
-        </li>
-        <li class="c-preview c-light-overlay">
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="$ThemeDir/images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-                <img src="$ThemeDir/images/thumbs/2.jpg" alt="img02"/>
-            </a>
-        </li>
-        <li class="c-preview">
             <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="$ThemeDir/images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
                 <img src="$ThemeDir/images/thumbs/3.jpg" alt="img03"/>
             </a>
