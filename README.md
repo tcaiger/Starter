@@ -8,7 +8,7 @@ A project starter for SilverStripe projects.
 
 ### SCSS Styles Overview ###
 * All scss is stored in the styles folder and compiles to css/main.css.
-* Css architecture is based on BEMIT, ITCSS and uses Bootstrap framework for reset, grid and some utility classes (https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture)
+* Css architecture is based on BEMIT, ITCSS and uses Bootstrap framework for reset, grid and some utility classes
 
 ### Set Up A New Project Locally ###
 * Keep a copy of the starter repo on your local machine.
@@ -20,3 +20,7 @@ A project starter for SilverStripe projects.
 * Ssh into the server.
 * Clone the project to public_html on the server.
 * Run composer install to get the php modules.
+
+### References ###
+ITCSS: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture
+Add A Repo To Server: https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
