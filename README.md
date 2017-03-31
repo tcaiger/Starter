@@ -21,6 +21,10 @@ A project starter for SilverStripe projects.
 * Clone the project to public_html on the server.
 * Run composer install to get the php modules.
 
+
+### Set Up An Existing Project On The Server ###
+* https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+* Before adding all the files (with git add .), create a .gitignore file at the project root and add the php modules to it.
+
 ### References ###
 * ITCSS: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture
-* Add A Repo To Server: https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
