@@ -65,8 +65,8 @@ class ContactForm extends Form {
             $form->sessionMessage("There was a problem with the form. Please try again.", 'bad');
         }
 
-        $url = $_SERVER['HTTP_REFERER'] . '#BootstrapForm_ContactForm';
+        $url = $this->controller->link('#hero-anchor');
 
-        return $this->redirect($url);
+        return $this->controller->redirect($url);
     }
 }
