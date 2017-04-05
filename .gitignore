@@ -12,8 +12,6 @@ assets/
 # composer vendor folder
 /vendor/
 
-#config
-mysite/_config.php
 
 
 # node modules
