@@ -3,134 +3,62 @@
 \*------------------------------------*/
 
 
-// Layout
-// -----------------
-.u-container{
-  max-width: 800px;
-  margin :0 auto;
-}
-.u-full-height {
-  height : 100% !important;
-}
-
-.u-full-width {
-  width : 100% !important;
-}
-.u-divide40{
-  width : 100%;
-  height : 40px;
-}
-
-.u--up{
-  position: relative;
-  top :-1px;
-}
-
-// Padding
-// -----------------
-.u-pt--sm {
-  padding-top:  4%;
-}
-.u-pt--md {
-  padding-top:  5%;
-}
-.u-pt--lg {
-  padding-top:  8%;
-}
-.u-pb--sm {
-  padding-bottom:  4%;
-}
-.u-pb--md {
-  padding-bottom:  5%;
-}
-.u-pb--lg {
-  padding-bottom:  7%;
-}
-
-
-
-// Margin
-// -----------------
-.u-mt--0 {
-  margin-top:  0;
-}
-.u-mt--sm {
-  margin-top:  3%;
-}
-.u-mt--md {
-  margin-top:  8%;
-}
-.u-mt--lg {
-  margin-top:  12%;
-}
-.u-mb--sm {
-  margin-bottom:  3%;
-}
-.u-mb--md {
-  margin-bottom:  7%;
-}
-.u-mb--lg {
-  margin-bottom:  12%;
-}
-
-
-
 // Background
 // -----------------
-.u-bg--primary {
+.t-bg-primary {
   background-color : $primary!important;
 }
 
-.u-bg--secondary {
+.t-bg-secondary {
   background-color : $secondary !important;
 }
 
 
 // Text colours
-.u-text--primary {
+.t-text-primary {
   color : $primary !important;
 }
 
-.u-text--secondary {
+.t-text-secondary {
   color : $secondary!important;
 }
 
-.u-text--black {
+.t-text-black {
   color : #000000 !important;
 }
-.u-text--white {
+.t-text-white {
   color : $white !important;
 }
 
 // Typography
-.u-text--left {
+.t-text-left {
   text-align : left;
 }
 
-.u-text--right {
+.t-text-right {
   text-align : right;
 }
 
-.u-text--center {
+.t-text-center {
   text-align : center;
 }
 
-.u-text--justify {
+.t-text-justify {
   text-align : justify;
 }
 
-.u-text--nowrap {
+.t-text-nowrap {
   white-space : nowrap;
 }
 
-.u-text--lowercase {
+.t-text-lowercase {
   text-transform : lowercase;
 }
 
-.u-text--uppercase {
+.t-text-uppercase {
   text-transform : uppercase;
 }
 
-.u-text--capitalize {
+.t-text-capitalize {
   text-transform : capitalize;
 }

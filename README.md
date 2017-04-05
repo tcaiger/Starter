@@ -26,6 +26,9 @@ A project starter for SilverStripe projects.
 * https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 * If the modules are installed with composer. Create a .gitignore file at the project root and add the php modules to it before the git add . step. 
 
+### Notes ###
+* Browser support back to IE9
 
 ### References ###
 * ITCSS: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture
+* Font guidelines: https://css-tricks.com/snippets/css/using-font-face/

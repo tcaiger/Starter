@@ -13,10 +13,3 @@ SSViewer:
 StringField:
   extensions:
     - StringFormatter
-
-EventApi:
-  eventFinderUsername: lakesleisure2
-  eventFinderPassword: 6fc7wyf6n5qm
-  eventEndPoint: http://api.eventfinder.co.nz/v2/events.json
-  categoryEndPoint: http://api.eventfinder.co.nz/v2/categories.json
-  locationEndPoint:
