@@ -614,6 +614,11 @@ Form .chosen-container-single .chosen-single {
 .chosen-single div b {
   display: none !important; }
 
+.field.checkbox label {
+  position: relative;
+  margin-left: 10px;
+  top: 2px; }
+
 /*------------------------------------*    #COMPONENTS.MESSAGE
 \*------------------------------------*/
 .message {
@@ -1484,13 +1489,14 @@ Form .chosen-container-single .chosen-single {
   width: 100%;
   text-align: center;
   padding-bottom: 10px; }
-  .slider__arrow .icon-down {
+  .slider__arrow .icon-downarrow {
     color: white;
-    font-size: 40px; }
+    font-size: 30px;
+    font-weight: 600; }
 
 /*------------------------------------*    #COMPONENTS.BUTTONS
 \*------------------------------------*/
-.btn--default, .btn--primary, .btn--secondary, #MemberLoginForm_LoginForm input[type=submit] {
+.btn--default, .btn--primary, #MemberLoginForm_LoginForm input[type=submit], .btn--secondary {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 0;
@@ -1519,10 +1525,10 @@ Form .chosen-container-single .chosen-single {
     background-color: #666666;
     color: white; }
 
-.btn--primary {
+.btn--primary, #MemberLoginForm_LoginForm input[type=submit] {
   background-color: #c0392b;
   color: white; }
-  .btn--primary:hover {
+  .btn--primary:hover, #MemberLoginForm_LoginForm input[type=submit]:hover {
     background-color: #962d22;
     color: white; }
 
@@ -2255,6 +2261,8 @@ input[type="button"].btn-block {
 \*------------------------------------*/
 #MemberLoginForm_LoginForm {
   max-width: 500px; }
+  #MemberLoginForm_LoginForm input[type=submit] {
+    margin: 18px 0; }
 
 /*------------------------------------*    #TRUMPS.UTILITIES
 \*------------------------------------*/
