@@ -1,26 +1,28 @@
-<section class="c-slider">
-    <div class="c-slider__items js-slick">
-        <div class="c-slide t-focuspoint"
-             data-focus-x="0"
-             data-focus-y="-0"
+<section class="slider">
+
+    <div class="slider__content">
+        <h1>
+            Website Landing Text
+        </h1>
+    </div>
+
+    <div class="slider__items js-slider">
+        <div class="focuspoint js-focuspoint"
+             data-focus-x="0.3"
+             data-focus-y="-0.5"
              data-image-w="1200"
              data-image-h="800">
-            <div class="c-slide__cta">
-                <h2>Slide 2 Description</h2>
-                <a class="c-btn c-btn--primary" href="#">Call to action</a>
-            </div>
-            <img src="$ThemeDir/images/slides/slide1.jpg">
+            <img src="$ThemeDir/images/slide1.jpg">
         </div>
-        <div class="c-slide t-focuspoint"
+        <div class="focuspoint js-focuspoint"
              data-focus-x="0"
              data-focus-y="0"
              data-image-w="1200"
              data-image-h="800">
-            <div class="c-slide__cta">
-                <h2>Slide 2 Description</h2>
-                <a class="c-btn c-btn--secondary" href="#">Call to action</a>
-            </div>
-            <img src="//:0" data-lazy="$ThemeDir/images/slides/slide2.jpg"/>
+            <img src="//:0" data-lazy="$ThemeDir/images/slide2.jpg"/>
         </div>
+    </div>
+    <div class="slider__arrow">
+        <div class="icon-down"></div>
     </div>
 </section>

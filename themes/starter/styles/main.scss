@@ -4,40 +4,40 @@
 
 @charset "UTF-8";
 
-// 1. Settings
+// SETTINGS
 @import 'settings',
 
-  // 2. Vendor
-'vendor/bootstrap',
-'vendor/slick',
-'vendor/slick-theme',
-'vendor/icheck',
-'vendor/chosen',
-
-  // 3. Tools
+// MIXINS
 'mixins',
 
-// 4. Generic (including 'elements')
+// GENERIC
+'generic/normaize',
 'generic/fonts',
 'generic/default',
 'generic/typography',
 'generic/forms',
 
-// 6. Layout
+// LAYOUT
+'layout/bootstrap-grid',
 'layout/grid',
 
-// 7. Components
+// COMPONENTS
 'components/header',
 'components/slider',
 'components/footer',
 'components/buttons',
 'components/icon',
-'components/preview',
-'components/expander',
 
-// 8. Trumps
+
+// VENDOR
+'vendor/slick',
+'vendor/slick-theme',
+'vendor/icheck',
+'vendor/chosen',
+
+// TRUMPS
 'trumps/focuspoint',
-'trumps/hacks',
-'trumps/home',
+'trumps/pages',
+'trumps/misc',
 'trumps/utilities';
 

@@ -19,11 +19,15 @@ themes/starter/node_modules/
 themes/starter/images/temp/
 
 # modules
-betterbuttons/
-googlesitemaps/
-gridfieldextensions/
-nocaptcha/
-spamprotection/
-gridfield-bulk-editing-tools/
-focuspoint/
-forum/
+betterbuttons
+googlesitemaps
+gridfieldextensions
+nocaptcha
+spamprotection
+gridfield-bulk-editing-tools
+focuspoint
+silverstripe-seo-editor
+metatitle
+userforms
+sendgrid
+silverstripe-nocaptcha

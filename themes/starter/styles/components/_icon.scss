@@ -13,7 +13,7 @@
   font-style  : normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"], .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family             : 'icomoon' !important;
   speak                   : none;
@@ -28,72 +28,53 @@
   -moz-osx-font-smoothing : grayscale;
 }
 
-.icon-arrow-down:before {
-  content : "\e900";
+.icon-downarrow:before {
+  content: "\e901";
 }
-
-.icon-arrow-left:before {
-  content : "\e901";
+.icon-leftarrow:before {
+  content: "\e905";
 }
-
-.icon-arrow-right:before {
-  content : "\e902";
+.icon-rightarrow:before {
+  content: "\e909";
 }
-
-.icon-arrow-up:before {
-  content : "\e903";
-}
-
-.icon-facebook:before {
-  content : "\e904";
-}
-
-.icon-instagram:before {
-  content : "\e906";
-}
-
-.icon-nz:before {
-  content : "\e907";
-}
-
-.icon-twitter:before {
-  content : "\e908";
-}
-
-.icon-vimeo:before {
-  content : "\e909";
-}
-
-.icon-youtube:before {
-  content : "\e90a";
-}
-
-.icon-flickr:before {
-  content : "\e905";
-}
-
-.icon-cross:before {
-  content: "\e90b";
-}
-.icon-menu:before {
+.icon-uparrow:before {
   content: "\e90c";
 }
-
-
-
-// General Styles
-
-.c-icon {
-  display: inline-block;
-  position         : relative;
-  z-index          : 11;
-  color            : $white;
-  transition       : color 0.3s ease;
-
+.icon-cross:before {
+  content: "\e900";
 }
-
-.c-icon__holder {
-  display : inline-block;
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-glass:before {
+  content: "\e903";
+}
+.icon-house:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\e906";
+}
+.icon-nz:before {
+  content: "\e907";
+}
+.icon-pinterest:before {
+  content: "\e908";
+}
+.icon-speech:before {
+  content: "\e90a";
+}
+.icon-thumb:before {
+  content: "\e90b";
+}
+.icon-return:before {
+  content: "\e90d";
+}
+.icon-play:before {
+  content: "\e90e";
+}
+.icon-quotes:before {
+  content: "\e90f";
 }
 
 

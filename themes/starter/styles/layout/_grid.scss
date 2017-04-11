@@ -1,10 +1,14 @@
 /*------------------------------------*\
-    #LAYOUT.LAYOUT
+    #LAYOUT.GRID
 \*------------------------------------*/
-.l-container {
-  max-width     : $customContainer;
-  margin :0 auto;
-  @media screen and (min-width: $screen-lg){
-    padding :0 30px;
+.container {
+  position      : relative;
+  max-width     : $container;
+  margin        : 0 auto;
+  padding-left  : $gutter-sm;
+  padding-right : $gutter-sm;
+  @media screen and (min-width : $screen-xs) {
+    padding-left  : $gutter-lg;
+    padding-right : $gutter-lg;
   }
 }

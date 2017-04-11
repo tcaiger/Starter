@@ -8,15 +8,19 @@ $secondary : #2c3e50;
 $tertiary: #2980b9;
 $white : #FFFFFF;
 
+$bodyColour: #333;
+
 // Fonts
 $bodyFont : 'Lato', Calibri, Arial, sans-serif;
 $headingFont : 'Lato', Calibri, Arial, sans-serif;
 
-$bodyColour: #333;
-
-// Fonts
-$bodyFont : 'Museo Sans', Calibri, Arial, sans-serif;
-$headingFont : 'Museo Sans', Calibri, Arial, sans-serif;
 
 // layout
-$customContainer: 1500px;
+$container: 1400px;
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+$gutter-lg: 60px;
+$gutter-sm: 15px;

@@ -86,39 +86,48 @@
   }
 }
 
-// Button variants
-// --------------------------------------------------
 
-@mixin button-variant($color, $background, $border, $hover-color: $color, $hover-background: darken($background, 10%), $hover-border: darken($background, 10%)) {
+/**
+ * VH and VW units can cause issues on iOS devices: http://caniuse.com/#feat=viewport-units
+ *
+ * To overcome this, create media queries that target the width, height, and orientation of iOS devices.
+ * It isn't optimal, but there is really no other way to solve the problem. In this example, I am fixing
+ * the height of element `.foo` —which is a full width and height cover image.
+ *
+ * iOS Resolution Quick Reference: http://www.iosres.com/
+ */
 
-  color            : $color;
-  background-color : $background;
-  border-color     : $border;
 
-  &:hover {
-    color            : $hover-color;
-    background-color : $hover-background;
-    border-color     : $hover-border;
-  }
-}
+@mixin iosHeights($height){
 
-// Button sizes
-// --------------------------------------------------
-
-@mixin placeholder($color) {
-  &::-webkit-input-placeholder {
-    color : $color;
+  //iPhone 3 and 4 portrait
+  @media all and (device-width : 320px) and (device-height : 480px) and (orientation : portrait) {
+    height : 1px*$height!important;
   }
 
-  &:-moz-placeholder { /* Firefox 18- */
-    color : $color;
+  //iPhone 3 and 4 landscape
+  @media all and (device-width : 320px) and (device-height : 480px) and (orientation : landscape) {
+    height : 1px*$height!important;
   }
 
-  &::-moz-placeholder { /* Firefox 19+ */
-    color : $color;
+  //iPhone 5 portrait
+  @media all and (device-width : 320px) and (device-height : 568px) and (orientation : portrait) {
+    height : 1px*$height!important;
   }
 
-  &:-ms-input-placeholder {
-    color : $color;
+  //iPhone 5 landscape
+  @media all and (device-width : 320px) and (device-height : 568px) and (orientation : landscape) {
+    height : 1px*$height!important;
   }
+
+  //iPad portrait
+  @media all and (device-width : 768px) and (device-height : 1024px) and (orientation : portrait) {
+    height : 1px*$height!important;
+  }
+
+  //iPad landscape
+  @media all and (device-width : 768px) and (device-height : 1024px) and (orientation : landscape) {
+    height : 1px*$height!important;
+  }
+
 }

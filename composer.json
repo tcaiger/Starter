@@ -3,8 +3,8 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.3",
-		"silverstripe/cms": "3.4.1",
-		"silverstripe/framework": "3.4.1",
+		"silverstripe/cms": "3.*",
+		"silverstripe/framework": "3.*",
 		"silverstripe/reports": "3.4.1",
 		"silverstripe/siteconfig": "3.4.1",
 		"undefinedoffset/silverstripe-nocaptcha": "^0.1.5",

@@ -6,12 +6,13 @@ input.text,
 textarea.textarea {
   width         : 100%;
   font-size     : 15px;
-  padding-left  : 10px;
+  padding-left  : 20px;
   border-radius : 0;
   height        : 50px;
   border        : 1px solid #ccc;
   box-shadow    : none;
   margin-bottom : 15px;
+  box-sizing: border-box;
 
   &:focus {
     box-shadow : none;
@@ -49,8 +50,8 @@ textarea.textarea {
 
 Form .chosen-container-single .chosen-single {
   font-size     : 15px;
-  padding-left  : 10px;
-  color         : #999;
+  padding-left  : 20px;
+  color         : $bodyColour;
   border-radius : 0;
   height        : 50px;
   border        : 1px solid #ccc;
@@ -66,44 +67,42 @@ Form .chosen-container-single .chosen-single {
 
 .chosen-single {
   &:before {
-    position    : absolute;
-    font-family : 'icomoon' !important;
-    content     : "\e900";
-    font-size   : 12px;
-    right       : 5px;
-    width       : 20px;
-    height      : 20px;
+    @extend .icon;
+    position  : absolute;
+    content   : "\e901";
+    font-size : 24px;
+    right     : 15px;
+    top       : 12px;
   }
   div b {
     display : none !important;
   }
 }
 
-
 /*------------------------------------*\
     #COMPONENTS.MESSAGE
 \*------------------------------------*/
-.message{
-  font-size: 14px;
-  font-weight: 400;
-  display: block;
-  padding: 7px 15px;
-  margin: -8px 0 15px;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  &.good{
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    color: #3c763d;
+.message {
+  font-size     : 14px;
+  font-weight   : 400;
+  display       : block;
+  padding       : 7px 15px;
+  margin        : -8px 0 15px;
+  border        : 1px solid transparent;
+  border-radius : 2px;
+  &.good {
+    background-color : #dff0d8;
+    border-color     : #d6e9c6;
+    color            : #3c763d;
   }
-  &.warning{
-    background-color: #fcf8e3;
-    border-color: #faebcc;
-    color: #8a6d3b;
+  &.warning {
+    background-color : #fcf8e3;
+    border-color     : #faebcc;
+    color            : #8a6d3b;
   }
-  &.bad, &.required, &.validation{
-    background-color: #f2dede;
-    border-color: #ebccd1;
-    color: #a94442;
+  &.bad, &.required, &.validation {
+    background-color : #f2dede;
+    border-color     : #ebccd1;
+    color            : #a94442;
   }
 }

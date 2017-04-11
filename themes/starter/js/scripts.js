@@ -11,10 +11,10 @@ $(document).ready(function () {
         init: function () {
             this.nav.init();
             this.icheck.init();
-            this.slick.init();
+            this.slider.init();
+            this.focusPoint.init();
             this.chosen.init();
             this.smoothScroll.init();
-            this.expander.init();
         },
         nav: {
             button: $('.js-nav-btn'),
@@ -59,39 +59,42 @@ $(document).ready(function () {
                 }
             },
         },
-        slick: {
+        slider: {
             settings: {
                 slidesToShow: 1,
                 lazyLoad: 'progressive',
                 dots: false,
-                // autoplay: true,
                 useTransform: true,
                 fade: true,
                 cssEase: 'linear',
-                prevArrow: "<span class='c-slider__prev'></span>",
-                nextArrow: "<span class='c-slider__next'></span>"
+                prevArrow: "<span class='btn--prev'></span>",
+                nextArrow: "<span class='btn--next'></span>"
             },
-            slider: $('.js-slick'),
+            slider: $('.js-slider'),
             init: function () {
                 if(this.slider.length){
                     this.slider.slick(this.settings);
-                    $('.t-focuspoint').focusPoint();
-                    this.events();
+                    SCRIPTS.focusPoint.init();
                 }
-            },
-            events: function(){
-                var _this = this;
-                this.slider.on('afterChange',function () {
+            }
+        },
+        focusPoint: {
+            init: function () {
+                if ($('.js-focuspoint').length) {
+                console.log('init');
+                    $('.js-focuspoint').focusPoint();
 
-                    $('.c-slide h2, .c-slide a').removeClass('active');
-                    var current = $('.js-slick .slick-current');
-                    current.find('h2').addClass('active');
-                    setTimeout(function(){
+                    // Fixes issue with focuspoint not resizing after window finishes resizing
+                    var doit;
+                    $(window).resize(function () {
+                        clearTimeout(doit);
+                        doit = setTimeout(resizedw, 100);
+                    });
 
-                    current.find('a').addClass('active');
-                    }, 700);
-
-                });
+                    function resizedw() {
+                        $('.js-focuspoint').focusPoint('adjustFocus');
+                    }
+                }
             }
         },
         chosen: {
@@ -99,11 +102,6 @@ $(document).ready(function () {
                 if ($('select').length && !/iPad|iPhone|iPod/.test(navigator.userAgent)) {
                     $('select').chosen({width: '100%'});
                 }
-            }
-        },
-        expander: {
-            init: function () {
-                Expander.init();
             }
         }
     }

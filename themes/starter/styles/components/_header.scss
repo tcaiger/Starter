@@ -2,14 +2,15 @@
     #COMPONENTS.HEADER
 \*------------------------------------*/
 
-$top-padding : 10px;
-
-.c-header {
-  position : relative;
-  @include responsive('padding-top', 0.6* $top-padding, $top-padding);
-  @include responsive('padding-bottom', $top-padding * 2);
+.header {
+  position   : absolute;
+  padding :15px 0;
+  top        : 0;
+  background : transparent;
+  z-index: 10;
+  width: 100%;
   &.active {
-    .c-nav {
+    .nav {
       display : block;
     }
     .icon-menu {
@@ -21,19 +22,18 @@ $top-padding : 10px;
   }
 }
 
-.c-header__brand {
+.header__brand {
   display : inline-block;
   float   : left;
   img {
     max-height : 100%;
-    @include responsive('width', 120px, 140px, 150px);
+    @include responsive('height', 40px, 50px);
   }
 }
 
-.c-header__menu {
-
-  float : right;
-  @include responsive('padding-top', 0.5em, 1em);
+.header__menu {
+  float       : right;
+  padding-top : 15px;
   .icon-menu {
     display   : block;
     font-size : 32px;
@@ -50,7 +50,7 @@ $top-padding : 10px;
     top       : -10px;
     left      : 7px;
     font-size : 56px;
-    color     : $white;
+    color     : white;
     &:hover {
       cursor : pointer;
     }
@@ -60,7 +60,7 @@ $top-padding : 10px;
 /*------------------------------------*\
     #COMPONENTS.NAV
 \*------------------------------------*/
-.c-nav {
+.nav {
   position    : absolute;
   display     : none;
   user-select : none;
@@ -71,17 +71,17 @@ $top-padding : 10px;
   text-align  : right;
   background  : rgba(10, 10, 10, 0.95);
   z-index     : 50;
-  @media screen and (min-width: $screen-sm){
-    right       : -1000px;
-    padding     : 100px 1000px 50px 50px;
+  @media screen and (min-width : $screen-sm) {
+    right   : -1000px;
+    padding : 100px 1000px 50px 50px;
   }
 }
 
-.c-nav__list {
+.nav__list {
   margin-top : 1.5em;
 }
 
-.c-nav__item {
+.nav__item {
   padding-left : 100px;
   transition   : background 0.3s ease;
   &:hover {
@@ -89,48 +89,48 @@ $top-padding : 10px;
   }
 }
 
-.c-nav__link {
+.nav__link {
   display     : block;
   padding     : 5px;
-  color       : $white;
+  color       : white;
   background  : none;
   font-size   : 24px;
   font-weight : 600;
   transition  : color 0.3s ease;
   &:hover {
-    color : $white;
+    color : white;
   }
   &:focus {
-    color : $white;
+    color : white;
   }
 }
 
-.c-nav__footer {
+.nav__footer {
   position   : relative;
   margin-top : 4em;
   padding    : 2em 0 3em 0;
-  border-top : 1px solid $white;
+  border-top : 1px solid white;
 }
 
-.c-nav__socials {
+.nav__socials {
   position : absolute;
   left     : 10px;
   top      : 2.6em;
   i {
-    font-size : 24px;
-    transition: color 0.3s ease;
-    &:hover{
-      color: $primary;
+    font-size  : 24px;
+    transition : color 0.3s ease;
+    &:hover {
+      color : $primary;
     }
   }
 }
 
-.c-nav__contact {
+.nav__contact {
   a {
-    color : $white;
-    transition: color 0.3s ease;
-    &:hover{
-      color: $primary;
+    color      : white;
+    transition : color 0.3s ease;
+    &:hover {
+      color : $primary;
     }
   }
 }

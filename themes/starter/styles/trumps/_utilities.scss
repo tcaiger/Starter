@@ -2,63 +2,95 @@
     #TRUMPS.UTILITIES
 \*------------------------------------*/
 
-
-// Background
-// -----------------
-.t-bg-primary {
-  background-color : $primary!important;
+// BACKGROUND
+.bg-primary {
+  background-color : $primary !important;
 }
 
-.t-bg-secondary {
+.bg-secondary {
   background-color : $secondary !important;
 }
 
-
-// Text colours
-.t-text-primary {
+// TEXT COLOURS
+.text-primary {
   color : $primary !important;
 }
 
-.t-text-secondary {
-  color : $secondary!important;
+.text-secondary {
+  color : $secondary !important;
 }
 
-.t-text-black {
+.text-black {
   color : #000000 !important;
 }
-.t-text-white {
+
+.text-white {
   color : $white !important;
 }
 
-// Typography
-.t-text-left {
-  text-align : left;
+// TYPOGRAPHY
+.text-left {
+  texalign : left !important;
 }
 
-.t-text-right {
-  text-align : right;
+.text-right {
+  texalign : right !important;
 }
 
-.t-text-center {
-  text-align : center;
+.text-center {
+  texalign : center !important;
 }
 
-.t-text-justify {
-  text-align : justify;
+.text-lowercase {
+  textransform : lowercase !important;
 }
 
-.t-text-nowrap {
-  white-space : nowrap;
+.text-uppercase {
+  textransform : uppercase !important;
 }
 
-.t-text-lowercase {
-  text-transform : lowercase;
+.text-capitalize {
+  textransform : capitalize !important;
 }
 
-.t-text-uppercase {
-  text-transform : uppercase;
+// FLOATS
+.clearfix {
+  @include clearfix;
 }
 
-.t-text-capitalize {
-  text-transform : capitalize;
+.pull-right {
+  float : right !important;
+}
+
+.pull-left {
+  float : left !important;
+}
+
+// HIDE
+.hidden {
+  display : none !important;
+}
+
+@media (max-width : 767px) {
+  .hidden-xs {
+    display : none !important;
+  }
+}
+
+@media (min-width : 768px) and (max-width : 991px) {
+  .hidden-sm {
+    display : none !important;
+  }
+}
+
+@media (min-width : 992px) and (max-width : 1199px) {
+  .hidden-md {
+    display : none !important;
+  }
+}
+
+@media (min-width : 1200px) {
+  .hidden-lg {
+    display : none !important;
+  }
 }
