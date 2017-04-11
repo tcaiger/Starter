@@ -626,6 +626,19 @@ Form .chosen-container-single .chosen-single {
     border-color: #ebccd1;
     color: #a94442; }
 
+/*------------------------------------*    #LAYOUT.GRID
+\*------------------------------------*/
+.container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media screen and (min-width: 480px) {
+    .container {
+      padding-left: 60px;
+      padding-right: 60px; } }
+
 /*------------------------------------*    #LAYOUT.BOOTSTRAPGRID
 \*------------------------------------*/
 .row {
@@ -1119,19 +1132,6 @@ Form .chosen-container-single .chosen-single {
   .col-lg-offset-12 {
     margin-left: 100%; } }
 
-/*------------------------------------*    #LAYOUT.GRID
-\*------------------------------------*/
-.container {
-  position: relative;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media screen and (min-width: 480px) {
-    .container {
-      padding-left: 60px;
-      padding-right: 60px; } }
-
 /*------------------------------------*    #COMPONENTS.HEADER
 \*------------------------------------*/
 .header {
@@ -1330,7 +1330,7 @@ Form .chosen-container-single .chosen-single {
 
 .footer__content {
   float: left;
-  max-width: 400px;
+  max-width: 500px;
   margin-bottom: 45px; }
 
 .footer__btt {

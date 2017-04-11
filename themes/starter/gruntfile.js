@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                     sourceMap  : true
                 },
                 expand : true,
-                cwd    : './styles/',
+                cwd    : './sass/',
                 src    : ['*.scss'],
                 dest   : './css/',
                 ext    : '.css'
@@ -36,7 +36,7 @@ module.exports = function (grunt) {
                     style      : 'compressed'
                 },
                 expand : true,
-                cwd    : './styles/',
+                cwd    : './sass/',
                 src    : ['*.scss'],
                 dest   : './css/',
                 ext    : '.css'
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
 
         watch : {
             sass: {
-                files  : ['./styles/**/*.scss'],
+                files  : ['./sass/**/*.scss'],
                 tasks  : ['sass:dev', 'autoprefixer'],
                 trace  : true,
                 options: {
