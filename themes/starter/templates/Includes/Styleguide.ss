@@ -43,7 +43,7 @@
             <div class="col-md-6">
                 <div class="editor-content">
                     <p class="p--lg">
-                        Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a>
+                        Lorem ipsum dolor sit amet, <a href="#">test link</a>
                         adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec
                         faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero
                         nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent
@@ -54,7 +54,7 @@
                         quis tellus.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
                         elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus.
                         Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem. Aliquam libero nisi,
                         imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis,
@@ -63,6 +63,11 @@
                         fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at,
                         commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
                     </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus.
+                        Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem.
+                    </p>
                     <ul>
                         <li>Cras justo odio</li>
                         <li>Dapibus ac facilisis in</li>
@@ -70,6 +75,12 @@
                         <li>Porta ac consectetur ac</li>
                         <li>Vestibulum at eros</li>
                     </ul>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus.
+                        Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem. Aliquam libero nisi,
+                        imperdiet at, tincidunt nec, gravida vehicula, nisl.
+                    </p>
                 </div>
             </div>
         </section>

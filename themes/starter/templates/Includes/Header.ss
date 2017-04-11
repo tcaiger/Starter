@@ -4,10 +4,11 @@
             <img src="$ThemeDir/images/logo.png" alt="logo">
         </a>
         <div class="header__menu js-nav-btn">
+            <span class="text">Menu</span>
             <i class="icon icon-menu"></i>
-            <i class="icon icon-cross"></i>
         </div>
-        <% include Nav %>
     </div>
 </header>
+
+<% include Nav %>
 

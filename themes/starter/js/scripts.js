@@ -18,14 +18,22 @@ $(document).ready(function () {
         },
         nav: {
             button: $('.js-nav-btn'),
-            header: $('.js-header'),
+            close: $('.js-close-btn'),
+            nav: $('.js-nav'),
+            overlay: $('.js-overlay'),
             init: function () {
-                this.events();
-            },
-            events: function () {
                 var _this = this;
                 this.button.on('click', function () {
-                    _this.header.toggleClass('active');
+                    _this.nav.addClass('active');
+                    _this.overlay.addClass('active');
+                });
+                this.close.on('click', function(){
+                    _this.nav.removeClass('active');
+                    _this.overlay.removeClass('active');
+                });
+                this.overlay.on('click', function(){
+                    _this.nav.removeClass('active');
+                    _this.overlay.removeClass('active');
                 });
             }
         },
