@@ -13,3 +13,10 @@ SSViewer:
 StringField:
   extensions:
     - StringFormatter
+
+SiteConfig:
+  emails:
+    adminEmail: 'blair@pacificjemm.com'
+    testEmail: 'hello@swordfox.nz'
+    bccEmail: 'alerts@swordfox.nz'
+    sendGridKey: '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' # Small Projects

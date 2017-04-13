@@ -2,12 +2,13 @@
 
 class MailController extends Controller {
 
-    private $testEmail = 'tom@swordfox.nz';
-    private $adminEmail = 'tom@swordfox.nz';
-    private $bccEmail = 'alerts@swordfox.nz';
-    private $sendGridKey = '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';
+    private $adminEmail;
+    private $testEmail;
+    private $bccEmail;
+    private $sendGridKey;
 
     public Function init() {
+
         parent::init();
     }
 
@@ -17,6 +18,11 @@ class MailController extends Controller {
     // -------------------------
 
     public function SendEmail($body) {
+        $EmailConfig = Config::inst()->get('SiteConfig', 'emails');
+        $this->adminEmail = $EmailConfig['adminEmail'];
+        $this->testEmail = $EmailConfig['testEmail'];
+        $this->bccEmail = $EmailConfig['bccEmail'];
+        $this->sendGridKey = $EmailConfig['sendGridKey'];
 
         $recipient = Director::isLive() ? $this->adminEmail : $this->testEmail;
 
