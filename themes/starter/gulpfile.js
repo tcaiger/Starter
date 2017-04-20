@@ -4,19 +4,41 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     cssnano = require('gulp-cssnano'),
+    merge = require('merge-stream'),
+    concat = require('gulp-concat'),
     livereload = require('gulp-livereload');
+
+var config = {
+  bootstrapPath: 'node_modules/bootstrap-sass/assets/stylesheets/',
+  icheck: 'node_modules/icheck/skins/minimal/minimal.css',
+  slick: 'node_modules/slick-carousel/slick/slick.css',
+  slicktheme: 'node_modules/slick-carousel/slick/slick-theme.css',
+  chosen: 'node_modules/chosen-js/chosen.css'
+}
 
 /* SASS */
 gulp.task('sass', function () {
-    return gulp.src('sass/**/*.scss')
+
+    var sassStream =
+    gulp.src('sass/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass({
+          includePaths: [
+            config.bootstrapPath
+          ]
+        }))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
+        .pipe(sourcemaps.write());
+
+    var cssStream =
+    gulp.src([config.slick, config.slicktheme, config.icheck, config.chosen]);
+
+    return merge(sassStream, cssStream)
+        .pipe(concat('main.min.css'))
         .pipe(cssnano())
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest('css'))
         .pipe(livereload());
 });

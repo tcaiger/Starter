@@ -7,37 +7,28 @@
 // SETTINGS
 @import 'settings',
 
+// Bootstrap
+'bootstrap',
+
 // MIXINS
 'mixins',
 
 // GENERIC
-'generic.normalize',
-'generic.fonts',
-'generic.default',
-'generic.typography',
-'generic.forms',
-
-// LAYOUT
-'layout.containers',
-'layout.grid',
+'generic/fonts',
+'generic/default',
+'generic/typography',
+'generic/forms',
 
 // COMPONENTS
-'components.icon',
-'components.header',
-'components.footer',
-'components.slider',
-'components.buttons',
+'components/icon',
+'components/header',
+'components/footer',
+'components/slider',
+'components/buttons',
 
-
-// VENDOR
-'vendor/slick',
-'vendor/slick-theme',
-'vendor/icheck',
-'vendor/chosen',
 
 // TRUMPS
-'trumps.focuspoint',
-'trumps.pages',
-'trumps.misc',
-'trumps.utilities';
-
+'trumps/focuspoint',
+'trumps/pages',
+'trumps/misc',
+'trumps/utilities';

@@ -21,7 +21,7 @@ class Page_Controller extends ContentController {
         parent::init();
 
 
-        Requirements::css("{$this->ThemeDir()}/css/main.css");
+        Requirements::css("{$this->ThemeDir()}/css/main.min.css");
         Requirements::combine_files(
             'main.js',
             [
