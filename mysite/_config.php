@@ -34,5 +34,5 @@ HtmlEditorConfig::get('cms')->setButtonsForLine(2, '');
   ------------------------------- */
 if(Director::isLive()) {
     Director::forceWWW();
-    Director::forceSSL();
+	//Director::forceSSL(); // Off by default unless client pays for SSL
 }
